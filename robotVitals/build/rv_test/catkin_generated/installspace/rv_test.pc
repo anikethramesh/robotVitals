@@ -1,0 +1,8 @@
+prefix=/home/aniketh/programming/robotVitals/install
+
+Name: rv_test
+Description: Description of rv_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

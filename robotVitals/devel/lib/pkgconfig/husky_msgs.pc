@@ -1,0 +1,8 @@
+prefix=/home/aniketh/programming/robotVitals/devel
+
+Name: husky_msgs
+Description: Description of husky_msgs
+Version: 0.4.8
+Cflags: -I/home/aniketh/programming/robotVitals/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

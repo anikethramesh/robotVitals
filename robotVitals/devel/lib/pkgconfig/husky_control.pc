@@ -1,0 +1,8 @@
+prefix=/home/aniketh/programming/robotVitals/devel
+
+Name: husky_control
+Description: Description of husky_control
+Version: 0.4.8
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

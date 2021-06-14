@@ -1,7 +1,7 @@
 # CMake generated Testfile for 
-# Source directory: /usr/src/googletest
-# Build directory: /home/aniketh/programming/robotVitals/build/gtest
+# Source directory: /usr/src/gmock
+# Build directory: /home/aniketh/rv_ws/robotVitals/robotVitals/build/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-subdirs("googlemock")
+subdirs(gtest)

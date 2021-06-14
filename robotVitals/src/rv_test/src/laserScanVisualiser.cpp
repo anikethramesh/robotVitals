@@ -60,7 +60,7 @@ int main(int argc, char **argv){
 	ros::init(argc, argv, "visualizer");
 	ros::NodeHandle n;
 	namedWindow("Scan", WINDOW_NORMAL);
-	ros::Subscriber sub = n.subscribe("scan", 100, visualizeLaserScan);
+	ros::Subscriber sub = n.subscribe("scan_with_noise", 100, visualizeLaserScan);
 	ros::spin();
 	return 0;
 }

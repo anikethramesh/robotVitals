@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "husky_msgs")
-set(husky_msgs_VERSION "0.4.8")
-set(husky_msgs_MAINTAINER "Tony Baltovski <tbaltovski@clearpathrobotics.com>")
+set(husky_msgs_VERSION "0.3.8")
+set(husky_msgs_MAINTAINER "Paul Bovbel <paul@bovbel.com>, Tony Baltovski <tbaltovski@clearpathrobotics.com>")
 set(husky_msgs_PACKAGE_FORMAT "1")
 set(husky_msgs_BUILD_DEPENDS "message_generation" "std_msgs")
 set(husky_msgs_BUILD_EXPORT_DEPENDS "message_runtime" "std_msgs")

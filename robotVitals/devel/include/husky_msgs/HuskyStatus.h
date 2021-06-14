@@ -162,40 +162,6 @@ ros::message_operations::Printer< ::husky_msgs::HuskyStatus_<ContainerAllocator>
 return s;
 }
 
-
-template<typename ContainerAllocator1, typename ContainerAllocator2>
-bool operator==(const ::husky_msgs::HuskyStatus_<ContainerAllocator1> & lhs, const ::husky_msgs::HuskyStatus_<ContainerAllocator2> & rhs)
-{
-  return lhs.header == rhs.header &&
-    lhs.uptime == rhs.uptime &&
-    lhs.ros_control_loop_freq == rhs.ros_control_loop_freq &&
-    lhs.mcu_and_user_port_current == rhs.mcu_and_user_port_current &&
-    lhs.left_driver_current == rhs.left_driver_current &&
-    lhs.right_driver_current == rhs.right_driver_current &&
-    lhs.battery_voltage == rhs.battery_voltage &&
-    lhs.left_driver_voltage == rhs.left_driver_voltage &&
-    lhs.right_driver_voltage == rhs.right_driver_voltage &&
-    lhs.left_driver_temp == rhs.left_driver_temp &&
-    lhs.right_driver_temp == rhs.right_driver_temp &&
-    lhs.left_motor_temp == rhs.left_motor_temp &&
-    lhs.right_motor_temp == rhs.right_motor_temp &&
-    lhs.capacity_estimate == rhs.capacity_estimate &&
-    lhs.charge_estimate == rhs.charge_estimate &&
-    lhs.timeout == rhs.timeout &&
-    lhs.lockout == rhs.lockout &&
-    lhs.e_stop == rhs.e_stop &&
-    lhs.ros_pause == rhs.ros_pause &&
-    lhs.no_battery == rhs.no_battery &&
-    lhs.current_limit == rhs.current_limit;
-}
-
-template<typename ContainerAllocator1, typename ContainerAllocator2>
-bool operator!=(const ::husky_msgs::HuskyStatus_<ContainerAllocator1> & lhs, const ::husky_msgs::HuskyStatus_<ContainerAllocator2> & rhs)
-{
-  return !(lhs == rhs);
-}
-
-
 } // namespace husky_msgs
 
 namespace ros
@@ -203,6 +169,12 @@ namespace ros
 namespace message_traits
 {
 
+
+
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
+// {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg'], 'husky_msgs': ['/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_msgs/msg']}
+
+// !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
 
 
@@ -267,58 +239,60 @@ struct Definition< ::husky_msgs::HuskyStatus_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "Header header\n"
-"\n"
-"# MCU Uptime, in ms\n"
-"uint32 uptime\n"
-"\n"
-"# ROS Control loop frequency (PC-side)\n"
-"float64 ros_control_loop_freq\n"
-"\n"
-"# Current draw of platform components, in amps\n"
-"float64 mcu_and_user_port_current\n"
-"float64 left_driver_current\n"
-"float64 right_driver_current\n"
-"\n"
-"# Voltage of platform components, in volts\n"
-"float64 battery_voltage\n"
-"float64 left_driver_voltage\n"
-"float64 right_driver_voltage\n"
-"\n"
-"# Component temperatures, in C\n"
-"float64 left_driver_temp\n"
-"float64 right_driver_temp\n"
-"float64 left_motor_temp\n"
-"float64 right_motor_temp\n"
-"\n"
-"# Battery capacity (Wh) and charge (%) estimate\n"
-"uint16 capacity_estimate\n"
-"float64 charge_estimate\n"
-"\n"
-"# Husky error/stop conditions\n"
-"bool timeout\n"
-"bool lockout\n"
-"bool e_stop\n"
-"bool ros_pause\n"
-"bool no_battery\n"
-"bool current_limit\n"
-"\n"
-"================================================================================\n"
-"MSG: std_msgs/Header\n"
-"# Standard metadata for higher-level stamped data types.\n"
-"# This is generally used to communicate timestamped data \n"
-"# in a particular coordinate frame.\n"
-"# \n"
-"# sequence ID: consecutively increasing ID \n"
-"uint32 seq\n"
-"#Two-integer timestamp that is expressed as:\n"
-"# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n"
-"# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n"
-"# time-handling sugar is provided by the client library\n"
-"time stamp\n"
-"#Frame this data is associated with\n"
-"string frame_id\n"
-;
+    return "Header header\n\
+\n\
+# MCU Uptime, in ms\n\
+uint32 uptime\n\
+\n\
+# ROS Control loop frequency (PC-side)\n\
+float64 ros_control_loop_freq\n\
+\n\
+# Current draw of platform components, in amps\n\
+float64 mcu_and_user_port_current\n\
+float64 left_driver_current\n\
+float64 right_driver_current\n\
+\n\
+# Voltage of platform components, in volts\n\
+float64 battery_voltage\n\
+float64 left_driver_voltage\n\
+float64 right_driver_voltage\n\
+\n\
+# Component temperatures, in C\n\
+float64 left_driver_temp\n\
+float64 right_driver_temp\n\
+float64 left_motor_temp\n\
+float64 right_motor_temp\n\
+\n\
+# Battery capacity (Wh) and charge (%) estimate\n\
+uint16 capacity_estimate\n\
+float64 charge_estimate\n\
+\n\
+# Husky error/stop conditions\n\
+bool timeout\n\
+bool lockout\n\
+bool e_stop\n\
+bool ros_pause\n\
+bool no_battery\n\
+bool current_limit\n\
+\n\
+================================================================================\n\
+MSG: std_msgs/Header\n\
+# Standard metadata for higher-level stamped data types.\n\
+# This is generally used to communicate timestamped data \n\
+# in a particular coordinate frame.\n\
+# \n\
+# sequence ID: consecutively increasing ID \n\
+uint32 seq\n\
+#Two-integer timestamp that is expressed as:\n\
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
+# time-handling sugar is provided by the client library\n\
+time stamp\n\
+#Frame this data is associated with\n\
+# 0: no frame\n\
+# 1: global frame\n\
+string frame_id\n\
+";
   }
 
   static const char* value(const ::husky_msgs::HuskyStatus_<ContainerAllocator>&) { return value(); }

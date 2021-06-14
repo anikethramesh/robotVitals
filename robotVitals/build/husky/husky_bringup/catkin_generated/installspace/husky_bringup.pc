@@ -1,8 +1,8 @@
-prefix=/home/aniketh/programming/robotVitals/install
+prefix=/home/aniketh/rv_ws/robotVitals/robotVitals/install
 
 Name: husky_bringup
 Description: Description of husky_bringup
-Version: 0.4.8
+Version: 0.3.8
 Cflags: 
 Libs: -L${prefix}/lib 
 Requires: 

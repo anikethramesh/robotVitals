@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "husky_desktop")
-set(husky_desktop_VERSION "0.4.8")
-set(husky_desktop_MAINTAINER "Tony Baltovski <tbaltovski@clearpathrobotics.com>")
+set(husky_desktop_VERSION "0.3.8")
+set(husky_desktop_MAINTAINER "Paul Bovbel <paul@bovbel.com>, Tony Baltovski <tbaltovski@clearpathrobotics.com>")
 set(husky_desktop_PACKAGE_FORMAT "1")
 set(husky_desktop_BUILD_DEPENDS )
 set(husky_desktop_BUILD_EXPORT_DEPENDS "husky_viz" "husky_msgs")

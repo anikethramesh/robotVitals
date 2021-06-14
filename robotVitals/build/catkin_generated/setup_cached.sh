@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/aniketh/programming/robotVitals/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/aniketh/programming/robotVitals/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/aniketh/programming/robotVitals/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/aniketh/programming/robotVitals/src:$ROS_PACKAGE_PATH"
+export PWD='/home/aniketh/rv_ws/robotVitals/robotVitals/build'

@@ -8,11 +8,11 @@
 	<arg name="urdf_extras" default=""/>
 
 	<!-- spawning coordinates in gazebo -->
-	<arg name="x" default="7.5"/>
-	<arg name="y" default="-7.5"/>
+	<arg name="x" default="-7.5"/>
+	<arg name="y" default="-11.5"/>
 	<arg name="z" default="0.00"/>
-	<arg name="yaw" default="3.14159"/>
-	<arg name="world_name" default="$(find husky_gazebo)/worlds/vitalsTestArena.world"/>
+	<arg name="yaw" default="0.00"/>
+	<arg name="world_name" default="/home/aniketh/rv_ws/robotVitals/robotVitals/src/rv_test/worlds/vitalsTestArena_snr_neutralZone.world"/>
 
 <!--  	<include file="$(find husky_gazebo)/launch/husky_empty_world.launch">
 		<arg name="laser_enabled" value="$(arg laser_enabled)"/>
@@ -47,8 +47,13 @@
 	<include file="$(find husky_navigation)/launch/move_base_mapless_demo.launch"/>
 	<include file="$(find husky_viz)/launch/view_robot.launch"/>
 
-<!-- 	<node name='rv_sampler' pkg='rv_test' type='sampler'/>
 
+<!-- 	<node name='rv_sampler' pkg='rv_test' type='sampler'/> -->
+	<node name='laser_noise' pkg ='laser_noise' type='laser_noise_node'/>
+	<node pkg="status_publisher" type="status_publisher" name="status_publisher" output="screen"/>
+	<!-- <node pkg="status_publisher" type="experiment_logger" name="experiment_logger" output="screen"/> -->
+	<node pkg="status_publisher" type="status_sound_publisher_node" name="status_sound_publisher_node" output="screen"/>	
+    <node pkg="status_publisher" name="pose_publisher" type="pose_publisher.py"/>
 	<node name='laserScanVisualiser' pkg='rv_test' type='laserScanVisualiser'/>
- -->
+
 </launch>

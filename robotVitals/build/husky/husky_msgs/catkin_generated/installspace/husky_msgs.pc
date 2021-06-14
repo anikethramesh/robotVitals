@@ -1,8 +1,8 @@
-prefix=/home/aniketh/programming/robotVitals/install
+prefix=/home/aniketh/rv_ws/robotVitals/robotVitals/install
 
 Name: husky_msgs
 Description: Description of husky_msgs
-Version: 0.4.8
+Version: 0.3.8
 Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
 Requires: std_msgs message_runtime

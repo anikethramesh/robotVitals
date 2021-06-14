@@ -1,8 +1,8 @@
-# Install script for directory: /home/aniketh/programming/robotVitals/src/rv_test
+# Install script for directory: /home/aniketh/rv_ws/robotVitals/robotVitals/src/rv_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aniketh/programming/robotVitals/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aniketh/rv_ws/robotVitals/robotVitals/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,23 +32,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aniketh/rv_ws/robotVitals/robotVitals/build/rv_test/catkin_generated/installspace/rv_test.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aniketh/programming/robotVitals/build/rv_test/catkin_generated/installspace/rv_test.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rv_test/cmake" TYPE FILE FILES
-    "/home/aniketh/programming/robotVitals/build/rv_test/catkin_generated/installspace/rv_testConfig.cmake"
-    "/home/aniketh/programming/robotVitals/build/rv_test/catkin_generated/installspace/rv_testConfig-version.cmake"
+    "/home/aniketh/rv_ws/robotVitals/robotVitals/build/rv_test/catkin_generated/installspace/rv_testConfig.cmake"
+    "/home/aniketh/rv_ws/robotVitals/robotVitals/build/rv_test/catkin_generated/installspace/rv_testConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rv_test" TYPE FILE FILES "/home/aniketh/programming/robotVitals/src/rv_test/package.xml")
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rv_test" TYPE FILE FILES "/home/aniketh/rv_ws/robotVitals/robotVitals/src/rv_test/package.xml")
 endif()
 

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/aniketh/programming/robotVitals/devel/setup.sh
+    local-name: /home/aniketh/rv_ws/robotVitals/robotVitals/devel/setup.sh

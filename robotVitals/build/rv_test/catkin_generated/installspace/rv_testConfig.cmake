@@ -67,14 +67,14 @@ set(rv_test_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(rv_test_SOURCE_PREFIX /home/aniketh/programming/robotVitals/src/rv_test)
-  set(rv_test_DEVEL_PREFIX /home/aniketh/programming/robotVitals/devel)
+  set(rv_test_SOURCE_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/src/rv_test)
+  set(rv_test_DEVEL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/devel)
   set(rv_test_INSTALL_PREFIX "")
   set(rv_test_PREFIX ${rv_test_DEVEL_PREFIX})
 else()
   set(rv_test_SOURCE_PREFIX "")
   set(rv_test_DEVEL_PREFIX "")
-  set(rv_test_INSTALL_PREFIX /home/aniketh/programming/robotVitals/install)
+  set(rv_test_INSTALL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/install)
   set(rv_test_PREFIX ${rv_test_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/aniketh/programming/robotVitals/install/lib;/home/aniketh/programming/rv_catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aniketh/rv_ws/robotVitals/robotVitals/install/lib;/home/aniketh/rv_ws/robotVitals/robotVitals/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

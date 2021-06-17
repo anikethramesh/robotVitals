@@ -1,8 +1,0 @@
-prefix=/home/aniketh/rv_ws/robotVitals/robotVitals/devel
-
-Name: status_publisher
-Description: Description of status_publisher
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: cv_bridge image_transport move_base roscpp

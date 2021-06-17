@@ -137,6 +137,10 @@ target_link_libraries(sampler ${catkin_LIBRARIES})
 add_executable(laserScanVisualiser src/laserScanVisualiser.cpp)
 target_link_libraries(laserScanVisualiser ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})
 
+add_executable(snr_estimator src/snr_estimator.cpp)
+target_link_libraries(snr_estimator ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})
+
+
 # add_executable(snr_estimator src/snr_estimator.cpp)
 # target_link_libraries(snr_estimator ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})
 

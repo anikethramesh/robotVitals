@@ -139,7 +139,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/rv_test/cmake_install.cmake")
   include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_base/cmake_install.cmake")
   include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/laser_noise/cmake_install.cmake")
-  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/status_publisher/cmake_install.cmake")
 
 endif()
 

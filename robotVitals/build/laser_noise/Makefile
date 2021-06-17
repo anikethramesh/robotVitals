@@ -56,28 +56,6 @@ CMAKE_BINARY_DIR = /home/aniketh/rv_ws/robotVitals/robotVitals/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -99,6 +77,28 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -166,46 +166,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-laser_noise/CMakeFiles/laser_noise_node.dir/rule:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 laser_noise/CMakeFiles/laser_noise_node.dir/rule
-.PHONY : laser_noise/CMakeFiles/laser_noise_node.dir/rule
+laser_noise/CMakeFiles/laserNoiseNode.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 laser_noise/CMakeFiles/laserNoiseNode.dir/rule
+.PHONY : laser_noise/CMakeFiles/laserNoiseNode.dir/rule
 
 # Convenience name for target.
-laser_noise_node: laser_noise/CMakeFiles/laser_noise_node.dir/rule
+laserNoiseNode: laser_noise/CMakeFiles/laserNoiseNode.dir/rule
 
-.PHONY : laser_noise_node
+.PHONY : laserNoiseNode
 
 # fast build rule for target.
-laser_noise_node/fast:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/build
-.PHONY : laser_noise_node/fast
+laserNoiseNode/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/build
+.PHONY : laserNoiseNode/fast
 
-src/laser_noise_node.o: src/laser_noise_node.cpp.o
+src/laserNoiseNode.o: src/laserNoiseNode.cpp.o
 
-.PHONY : src/laser_noise_node.o
+.PHONY : src/laserNoiseNode.o
 
 # target to build an object file
-src/laser_noise_node.cpp.o:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.o
-.PHONY : src/laser_noise_node.cpp.o
+src/laserNoiseNode.cpp.o:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/src/laserNoiseNode.cpp.o
+.PHONY : src/laserNoiseNode.cpp.o
 
-src/laser_noise_node.i: src/laser_noise_node.cpp.i
+src/laserNoiseNode.i: src/laserNoiseNode.cpp.i
 
-.PHONY : src/laser_noise_node.i
+.PHONY : src/laserNoiseNode.i
 
 # target to preprocess a source file
-src/laser_noise_node.cpp.i:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.i
-.PHONY : src/laser_noise_node.cpp.i
+src/laserNoiseNode.cpp.i:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/src/laserNoiseNode.cpp.i
+.PHONY : src/laserNoiseNode.cpp.i
 
-src/laser_noise_node.s: src/laser_noise_node.cpp.s
+src/laserNoiseNode.s: src/laserNoiseNode.cpp.s
 
-.PHONY : src/laser_noise_node.s
+.PHONY : src/laserNoiseNode.s
 
 # target to generate assembly for a file
-src/laser_noise_node.cpp.s:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.s
-.PHONY : src/laser_noise_node.cpp.s
+src/laserNoiseNode.cpp.s:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/src/laserNoiseNode.cpp.s
+.PHONY : src/laserNoiseNode.cpp.s
 
 # Help Target
 help:
@@ -213,17 +213,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... list_install_components"
-	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... list_install_components"
+	@echo "... install"
+	@echo "... laserNoiseNode"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... laser_noise_node"
 	@echo "... test"
-	@echo "... src/laser_noise_node.o"
-	@echo "... src/laser_noise_node.i"
-	@echo "... src/laser_noise_node.s"
+	@echo "... src/laserNoiseNode.o"
+	@echo "... src/laserNoiseNode.i"
+	@echo "... src/laserNoiseNode.s"
 .PHONY : help
 
 

@@ -104,16 +104,17 @@ include_directories(
 # )
 
 ## Declare a cpp executable
- add_executable(laser_noise_node src/laser_noise_node.cpp)
+# add_executable(laser_noise_node src/laser_noise_node.cpp)
+add_executable(laserNoiseNode src/laserNoiseNode.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(laser_noise_node laser_noise_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(laser_noise_node
-   ${catkin_LIBRARIES}
- )
+target_link_libraries(laserNoiseNode ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+# target_link_libraries(laserScanVisualiser ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})
+
 
 #############
 ## Install ##

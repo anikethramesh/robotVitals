@@ -1063,6 +1063,19 @@ _run_tests_husky_viz_roslaunch-check_launch/fast:
 .PHONY : _run_tests_husky_viz_roslaunch-check_launch/fast
 
 #=============================================================================
+# Target rules for targets named snr_estimator
+
+# Build rule for target.
+snr_estimator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 snr_estimator
+.PHONY : snr_estimator
+
+# fast build rule for target.
+snr_estimator/fast:
+	$(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/build
+.PHONY : snr_estimator/fast
+
+#=============================================================================
 # Target rules for targets named laserScanVisualiser
 
 # Build rule for target.
@@ -1622,355 +1635,17 @@ horizon_legacy/fast:
 .PHONY : horizon_legacy/fast
 
 #=============================================================================
-# Target rules for targets named laser_noise_node
+# Target rules for targets named laserNoiseNode
 
 # Build rule for target.
-laser_noise_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 laser_noise_node
-.PHONY : laser_noise_node
+laserNoiseNode: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 laserNoiseNode
+.PHONY : laserNoiseNode
 
 # fast build rule for target.
-laser_noise_node/fast:
-	$(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/build
-.PHONY : laser_noise_node/fast
-
-#=============================================================================
-# Target rules for targets named status_sound_publisher_node
-
-# Build rule for target.
-status_sound_publisher_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 status_sound_publisher_node
-.PHONY : status_sound_publisher_node
-
-# fast build rule for target.
-status_sound_publisher_node/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/status_sound_publisher_node.dir/build.make status_publisher/CMakeFiles/status_sound_publisher_node.dir/build
-.PHONY : status_sound_publisher_node/fast
-
-#=============================================================================
-# Target rules for targets named cam_compress
-
-# Build rule for target.
-cam_compress: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cam_compress
-.PHONY : cam_compress
-
-# fast build rule for target.
-cam_compress/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/cam_compress.dir/build.make status_publisher/CMakeFiles/cam_compress.dir/build
-.PHONY : cam_compress/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_lisp
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_lisp
-.PHONY : dynamic_reconfigure_generate_messages_lisp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_lisp
-
-# Build rule for target.
-actionlib_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_lisp
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make status_publisher/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named move_base_msgs_generate_messages_cpp
-
-# Build rule for target.
-move_base_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_cpp
-.PHONY : move_base_msgs_generate_messages_cpp
-
-# fast build rule for target.
-move_base_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make status_publisher/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
-.PHONY : move_base_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named experiment_logger
-
-# Build rule for target.
-experiment_logger: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 experiment_logger
-.PHONY : experiment_logger
-
-# fast build rule for target.
-experiment_logger/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/experiment_logger.dir/build.make status_publisher/CMakeFiles/experiment_logger.dir/build
-.PHONY : experiment_logger/fast
-
-#=============================================================================
-# Target rules for targets named move_base_msgs_generate_messages_lisp
-
-# Build rule for target.
-move_base_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_lisp
-.PHONY : move_base_msgs_generate_messages_lisp
-
-# fast build rule for target.
-move_base_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make status_publisher/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
-.PHONY : move_base_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_py
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_py
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_lisp
-
-# Build rule for target.
-nav_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_lisp
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named status_publisher
-
-# Build rule for target.
-status_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 status_publisher
-.PHONY : status_publisher
-
-# fast build rule for target.
-status_publisher/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/status_publisher.dir/build.make status_publisher/CMakeFiles/status_publisher.dir/build
-.PHONY : status_publisher/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_gencfg
-
-# Build rule for target.
-dynamic_reconfigure_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make status_publisher/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named move_base_gencfg
-
-# Build rule for target.
-move_base_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_base_gencfg
-.PHONY : move_base_gencfg
-
-# fast build rule for target.
-move_base_gencfg/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/move_base_gencfg.dir/build.make status_publisher/CMakeFiles/move_base_gencfg.dir/build
-.PHONY : move_base_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_cpp
-
-# Build rule for target.
-nav_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_cpp
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make status_publisher/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named move_base_msgs_generate_messages_py
-
-# Build rule for target.
-move_base_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_py
-.PHONY : move_base_msgs_generate_messages_py
-
-# fast build rule for target.
-move_base_msgs_generate_messages_py/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make status_publisher/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
-.PHONY : move_base_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_cpp
-
-# Build rule for target.
-actionlib_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_cpp
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make status_publisher/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_eus
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_eus
-.PHONY : dynamic_reconfigure_generate_messages_eus
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make status_publisher/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_eus
-
-# Build rule for target.
-nav_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_eus
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make status_publisher/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_eus
-
-# Build rule for target.
-actionlib_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_eus
-.PHONY : actionlib_msgs_generate_messages_eus
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make status_publisher/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named move_base_msgs_generate_messages_eus
-
-# Build rule for target.
-move_base_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_eus
-.PHONY : move_base_msgs_generate_messages_eus
-
-# fast build rule for target.
-move_base_msgs_generate_messages_eus/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make status_publisher/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
-.PHONY : move_base_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_nodejs
-
-# Build rule for target.
-actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_nodejs
-.PHONY : actionlib_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make status_publisher/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-.PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named move_base_msgs_generate_messages_nodejs
-
-# Build rule for target.
-move_base_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_base_msgs_generate_messages_nodejs
-.PHONY : move_base_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-move_base_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make status_publisher/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
-.PHONY : move_base_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_msgs_generate_messages_py
-
-# Build rule for target.
-actionlib_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_msgs_generate_messages_py
-.PHONY : actionlib_msgs_generate_messages_py
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make status_publisher/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_nodejs
-
-# Build rule for target.
-nav_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_nodejs
-.PHONY : nav_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-nav_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make status_publisher/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
-.PHONY : nav_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named nav_msgs_generate_messages_py
-
-# Build rule for target.
-nav_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_msgs_generate_messages_py
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	$(MAKE) -f status_publisher/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make status_publisher/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
+laserNoiseNode/fast:
+	$(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/build
+.PHONY : laserNoiseNode/fast
 
 # Help Target
 help:
@@ -2054,6 +1729,7 @@ help:
 	@echo "... run_tests_husky_viz"
 	@echo "... run_tests_husky_viz_roslaunch-check_launch"
 	@echo "... _run_tests_husky_viz_roslaunch-check_launch"
+	@echo "... snr_estimator"
 	@echo "... laserScanVisualiser"
 	@echo "... sampler"
 	@echo "... roscpp_generate_messages_lisp"
@@ -2097,33 +1773,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... horizon_legacy"
-	@echo "... laser_noise_node"
-	@echo "... status_sound_publisher_node"
-	@echo "... cam_compress"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... move_base_msgs_generate_messages_cpp"
-	@echo "... experiment_logger"
-	@echo "... move_base_msgs_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... status_publisher"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... move_base_gencfg"
-	@echo "... nav_msgs_generate_messages_cpp"
-	@echo "... move_base_msgs_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... move_base_msgs_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... move_base_msgs_generate_messages_nodejs"
-	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_py"
+	@echo "... laserNoiseNode"
 .PHONY : help
 
 

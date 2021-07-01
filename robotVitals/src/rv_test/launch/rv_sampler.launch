@@ -50,9 +50,6 @@
 	<!-- <node name='rv_sampler' pkg='rv_test' type='sampler'/> -->
 	<node name='laserScanVisualiser' pkg='rv_test' type='laserScanVisualiser'/>
 	<node name='snr_estimator' pkg='rv_test' type='snr_estimator'/>
-
-
-
 <!--
  	<node name='laser_noise' pkg ='laser_noise' type='laser_noise_node'/>
 	<node pkg="status_publisher" type="status_publisher" name="status_publisher" output="screen"/>

@@ -52,7 +52,8 @@
 	<node name='laserScanVisualiser' pkg='rv_test' type='laserScanVisualiser'/>
 	<node name='snr_estimator' pkg='rv_test' type='snr_estimator'/>
 
-
+	<!-- The robot vitals related nodes are launched here-->
+	<node name='sampler' pkg='rv_test' type = 'sampler'/>
 
 <!--
  	<node name='laser_noise' pkg ='laser_noise' type='laser_noise_node'/>

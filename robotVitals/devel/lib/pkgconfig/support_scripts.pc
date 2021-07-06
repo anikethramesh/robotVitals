@@ -1,0 +1,8 @@
+prefix=/home/aniketh/rv_ws/robotVitals/robotVitals/devel
+
+Name: support_scripts
+Description: Description of support_scripts
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

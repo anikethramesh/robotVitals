@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "husky_robot")
-set(husky_robot_VERSION "0.3.8")
-set(husky_robot_MAINTAINER "Paul Bovbel <paul@bovbel.com>, Tony Baltovski <tbaltovski@clearpathrobotics.com>")
+set(husky_robot_VERSION "0.4.4")
+set(husky_robot_MAINTAINER "Tony Baltovski <tbaltovski@clearpathrobotics.com>")
 set(husky_robot_PACKAGE_FORMAT "1")
 set(husky_robot_BUILD_DEPENDS )
 set(husky_robot_BUILD_EXPORT_DEPENDS "husky_bringup" "husky_base")

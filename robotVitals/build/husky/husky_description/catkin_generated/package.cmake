@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "husky_description")
-set(husky_description_VERSION "0.3.8")
-set(husky_description_MAINTAINER "Paul Bovbel <paul@bovbel.com>, Tony Baltovski <tbaltovski@clearpathrobotics.com>")
+set(husky_description_VERSION "0.4.4")
+set(husky_description_MAINTAINER "Tony Baltovski <tbaltovski@clearpathrobotics.com>")
 set(husky_description_PACKAGE_FORMAT "1")
 set(husky_description_BUILD_DEPENDS "roslaunch")
 set(husky_description_BUILD_EXPORT_DEPENDS "realsense2_description" "urdf" "xacro" "lms1xx")

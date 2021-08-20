@@ -1,2 +1,2 @@
 husky/husky_base:husky/husky_bringup:husky/husky_control:husky/husky_description:husky/husky_desktop:husky/husky_gazebo:husky/husky_msgs:husky/husky_navigation:husky/husky_robot:husky/husky_simulator:husky/husky_viz:laser_noise:rv_test:status_publisher
--DCATKIN_DEVEL_PREFIX=/home/aniketh/rv_ws/robotVitals/robotVitals/devel -DCMAKE_INSTALL_PREFIX=/home/aniketh/rv_ws/robotVitals/robotVitals/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/aniketh/programming/robotVitals/robotVitals/devel -DCMAKE_INSTALL_PREFIX=/home/aniketh/programming/robotVitals/robotVitals/install -G Unix Makefiles

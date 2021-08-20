@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/horizon_legacy.dir/src/horizon_legacy/Transport.cpp.o"
   "CMakeFiles/horizon_legacy.dir/src/horizon_legacy/Number.cpp.o"
   "CMakeFiles/horizon_legacy.dir/src/horizon_legacy/linux_serial.cpp.o"
-  "/home/aniketh/rv_ws/robotVitals/robotVitals/devel/lib/libhorizon_legacy.pdb"
-  "/home/aniketh/rv_ws/robotVitals/robotVitals/devel/lib/libhorizon_legacy.so"
+  "/home/aniketh/programming/robotVitals/robotVitals/devel/lib/libhorizon_legacy.pdb"
+  "/home/aniketh/programming/robotVitals/robotVitals/devel/lib/libhorizon_legacy.so"
 )
 
 # Per-language clean rules from dependency scanning.

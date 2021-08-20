@@ -62,8 +62,6 @@ uint32 seq
 # time-handling sugar is provided by the client library
 time stamp
 #Frame this data is associated with
-# 0: no frame
-# 1: global frame
 string frame_id
 """
   __slots__ = ['header','uptime','ros_control_loop_freq','mcu_and_user_port_current','left_driver_current','right_driver_current','battery_voltage','left_driver_voltage','right_driver_voltage','left_driver_temp','right_driver_temp','left_motor_temp','right_motor_temp','capacity_estimate','charge_estimate','timeout','lockout','e_stop','ros_pause','no_battery','current_limit']
@@ -181,7 +179,8 @@ string frame_id
     unpack serialized message in str into this message instance
     :param str: byte array of serialized message, ``str``
     """
-    codecs.lookup_error("rosmsg").msg_type = self._type
+    if python3:
+      codecs.lookup_error("rosmsg").msg_type = self._type
     try:
       if self.header is None:
         self.header = std_msgs.msg.Header()
@@ -240,7 +239,8 @@ string frame_id
     :param str: byte array of serialized message, ``str``
     :param numpy: numpy python module
     """
-    codecs.lookup_error("rosmsg").msg_type = self._type
+    if python3:
+      codecs.lookup_error("rosmsg").msg_type = self._type
     try:
       if self.header is None:
         self.header = std_msgs.msg.Header()

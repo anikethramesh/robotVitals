@@ -1,8 +1,8 @@
-prefix=/home/aniketh/rv_ws/robotVitals/robotVitals/devel
+prefix=/home/aniketh/programming/robotVitals/robotVitals/devel
 
 Name: husky_base
 Description: Description of husky_base
-Version: 0.3.8
-Cflags: -I/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include -I/usr/include
+Version: 0.4.4
+Cflags: -I/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include -I/usr/include
 Libs: -L${prefix}/lib -lhorizon_legacy /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_system.so
 Requires: diagnostic_updater hardware_interface husky_msgs roscpp sensor_msgs

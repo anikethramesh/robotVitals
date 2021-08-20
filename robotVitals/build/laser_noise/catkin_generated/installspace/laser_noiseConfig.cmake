@@ -67,14 +67,14 @@ set(laser_noise_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(laser_noise_SOURCE_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/src/laser_noise)
-  set(laser_noise_DEVEL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/devel)
+  set(laser_noise_SOURCE_PREFIX /home/aniketh/programming/robotVitals/robotVitals/src/laser_noise)
+  set(laser_noise_DEVEL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/devel)
   set(laser_noise_INSTALL_PREFIX "")
   set(laser_noise_PREFIX ${laser_noise_DEVEL_PREFIX})
 else()
   set(laser_noise_SOURCE_PREFIX "")
   set(laser_noise_DEVEL_PREFIX "")
-  set(laser_noise_INSTALL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/install)
+  set(laser_noise_INSTALL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/install)
   set(laser_noise_PREFIX ${laser_noise_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/aniketh/rv_ws/robotVitals/robotVitals/install/lib;/home/aniketh/rv_ws/robotVitals/robotVitals/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/aniketh/programming/robotVitals/robotVitals/install/lib;/home/aniketh/programming/rv_catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

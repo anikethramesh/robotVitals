@@ -1,4 +1,4 @@
-prefix=/home/aniketh/rv_ws/robotVitals/robotVitals/devel
+prefix=/home/aniketh/programming/robotVitals/robotVitals/devel
 
 Name: rv_test
 Description: Description of rv_test

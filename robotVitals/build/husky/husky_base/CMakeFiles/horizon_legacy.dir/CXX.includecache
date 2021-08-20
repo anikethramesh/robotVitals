@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Exception.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Exception.h
 iostream
 -
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Logger.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Logger.h
 iostream
 -
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message.h
 iostream
 -
 cstdlib
@@ -22,13 +22,13 @@ cstdlib
 stdint.h
 -
 husky_base/horizon_legacy/Exception.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Exception.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Exception.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message_cmd.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message_cmd.h
 husky_base/horizon_legacy/Message.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message_data.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message_data.h
 iostream
 -
 string
@@ -36,15 +36,15 @@ string
 stdint.h
 -
 husky_base/horizon_legacy/Message.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
 husky_base/horizon_legacy/Message_request.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message_request.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message_request.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message_request.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Message_request.h
 husky_base/horizon_legacy/Message.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Number.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Number.h
 cstdlib
 -
 stdint.h
@@ -52,23 +52,23 @@ stdint.h
 iostream
 -
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Transport.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/Transport.h
 list
 -
 iostream
 -
 husky_base/horizon_legacy/Message.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Message.h
 husky_base/horizon_legacy/Exception.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Exception.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/husky_base/horizon_legacy/Exception.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/crc.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/crc.h
 stdint.h
 -
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/serial.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/include/husky_base/horizon_legacy/serial.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Logger.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Logger.cpp
 iostream
 -
 fstream
@@ -78,9 +78,9 @@ signal.h
 unistd.h
 -
 husky_base/horizon_legacy/Logger.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message.cpp
 unistd.h
 -
 iostream
@@ -88,21 +88,21 @@ iostream
 string.h
 -
 husky_base/horizon_legacy/crc.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/crc.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/crc.h
 husky_base/horizon_legacy/Message.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message.h
 husky_base/horizon_legacy/Message_data.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_data.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_data.h
 husky_base/horizon_legacy/Number.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
 husky_base/horizon_legacy/Transport.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Transport.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Transport.h
 husky_base/horizon_legacy/Logger.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message_cmd.cpp
 husky_base/horizon_legacy/Message_cmd.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_cmd.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_cmd.h
 cstring
 -
 iostream
@@ -110,17 +110,17 @@ iostream
 typeinfo
 -
 husky_base/horizon_legacy/Number.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
 husky_base/horizon_legacy/Logger.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message_data.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message_data.cpp
 husky_base/horizon_legacy/Message_data.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_data.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_data.h
 husky_base/horizon_legacy/Number.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
 husky_base/horizon_legacy/Transport.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Transport.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Transport.h
 iostream
 -
 string
@@ -130,19 +130,19 @@ string.h
 sstream
 -
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message_request.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Message_request.cpp
 husky_base/horizon_legacy/Message_request.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_request.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_request.h
 husky_base/horizon_legacy/Number.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Number.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Number.cpp
 husky_base/horizon_legacy/Number.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
 cstdlib
 -
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Transport.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/Transport.cpp
 string.h
 -
 unistd.h
@@ -160,27 +160,27 @@ sstream
 ctime
 -
 husky_base/horizon_legacy/Transport.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Transport.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Transport.h
 husky_base/horizon_legacy/Number.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Number.h
 husky_base/horizon_legacy/Message.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message.h
 husky_base/horizon_legacy/Message_request.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_request.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_request.h
 husky_base/horizon_legacy/Message_cmd.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_cmd.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Message_cmd.h
 husky_base/horizon_legacy/serial.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/serial.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/serial.h
 husky_base/horizon_legacy/Logger.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/Logger.h
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/crc.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/crc.cpp
 husky_base/horizon_legacy/crc.h
 -
 
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/linux_serial.cpp
 husky_base/horizon_legacy/serial.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/serial.h
+/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_base/src/horizon_legacy/husky_base/horizon_legacy/serial.h
 stdio.h
 -
 string.h

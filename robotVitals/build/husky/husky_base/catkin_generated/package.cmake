@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "husky_base")
-set(husky_base_VERSION "0.3.8")
-set(husky_base_MAINTAINER "Paul Bovbel <paul@bovbel.com>, Tony Baltovski <tbaltovski@clearpathrobotics.com>")
+set(husky_base_VERSION "0.4.4")
+set(husky_base_MAINTAINER "Tony Baltovski <tbaltovski@clearpathrobotics.com>")
 set(husky_base_PACKAGE_FORMAT "1")
 set(husky_base_BUILD_DEPENDS "controller_manager" "diagnostic_updater" "diagnostic_msgs" "hardware_interface" "husky_msgs" "roscpp" "roslaunch" "roslint" "sensor_msgs")
 set(husky_base_BUILD_EXPORT_DEPENDS "controller_manager" "diagnostic_updater" "diagnostic_msgs" "diagnostic_aggregator" "diff_drive_controller" "geometry_msgs" "hardware_interface" "husky_control" "husky_msgs" "husky_description" "roscpp" "sensor_msgs" "topic_tools")

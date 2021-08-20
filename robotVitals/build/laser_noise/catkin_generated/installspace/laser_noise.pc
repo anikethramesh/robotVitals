@@ -1,4 +1,4 @@
-prefix=/home/aniketh/rv_ws/robotVitals/robotVitals/install
+prefix=/home/aniketh/programming/robotVitals/robotVitals/install
 
 Name: laser_noise
 Description: Description of laser_noise

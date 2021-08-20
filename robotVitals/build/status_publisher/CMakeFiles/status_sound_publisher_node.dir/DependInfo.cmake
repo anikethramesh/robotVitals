@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/aniketh/rv_ws/robotVitals/robotVitals/src/status_publisher/src/status_sound_publisher_node.cpp" "/home/aniketh/rv_ws/robotVitals/robotVitals/build/status_publisher/CMakeFiles/status_sound_publisher_node.dir/src/status_sound_publisher_node.cpp.o"
+  "/home/aniketh/programming/robotVitals/robotVitals/src/status_publisher/src/status_sound_publisher_node.cpp" "/home/aniketh/programming/robotVitals/robotVitals/build/status_publisher/CMakeFiles/status_sound_publisher_node.dir/src/status_sound_publisher_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,10 +17,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/opt/ros/kinetic/include"
-  "/opt/ros/kinetic/include/opencv-3.3.1-dev"
-  "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
-  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/opt/ros/melodic/include"
+  "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/usr/include/opencv"
   )
 
 # Targets to which this target links.

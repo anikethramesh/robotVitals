@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/laserScanVisualiser.dir/src/laserScanVisualiser.cpp.o"
-  "/home/aniketh/rv_ws/robotVitals/robotVitals/devel/lib/rv_test/laserScanVisualiser.pdb"
-  "/home/aniketh/rv_ws/robotVitals/robotVitals/devel/lib/rv_test/laserScanVisualiser"
+  "/home/aniketh/programming/robotVitals/robotVitals/devel/lib/rv_test/laserScanVisualiser.pdb"
+  "/home/aniketh/programming/robotVitals/robotVitals/devel/lib/rv_test/laserScanVisualiser"
 )
 
 # Per-language clean rules from dependency scanning.

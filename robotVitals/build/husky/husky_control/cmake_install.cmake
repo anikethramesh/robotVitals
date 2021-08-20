@@ -1,8 +1,8 @@
-# Install script for directory: /home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_control
+# Install script for directory: /home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/aniketh/rv_ws/robotVitals/robotVitals/install")
+  set(CMAKE_INSTALL_PREFIX "/home/aniketh/programming/robotVitals/robotVitals/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,25 +32,30 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_control/catkin_generated/installspace/husky_control.pc")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_control/catkin_generated/installspace/husky_control.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_control/cmake" TYPE FILE FILES
-    "/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_control/catkin_generated/installspace/husky_controlConfig.cmake"
-    "/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_control/catkin_generated/installspace/husky_controlConfig-version.cmake"
+    "/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_control/catkin_generated/installspace/husky_controlConfig.cmake"
+    "/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_control/catkin_generated/installspace/husky_controlConfig-version.cmake"
     )
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_control" TYPE FILE FILES "/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_control/package.xml")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_control" TYPE FILE FILES "/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_control/package.xml")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/husky_control" TYPE DIRECTORY FILES
-    "/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_control/config"
-    "/home/aniketh/rv_ws/robotVitals/robotVitals/src/husky/husky_control/launch"
+    "/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_control/config"
+    "/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_control/launch"
     )
 endif()
 

@@ -1,13 +1,12 @@
 <?xml version="1.0"?>
 <package>
   <name>husky_viz</name>
-  <version>0.3.8</version>
+  <version>0.4.4</version>
   <description>Visualization configuration for Clearpath Husky</description>
 
   <author email="rgariepy@clearpathrobotics.com">Ryan Gariepy</author>
   <author email="mpurvis@clearpathrobotics.com">Mike Purvis</author>
 
-  <maintainer email="paul@bovbel.com">Paul Bovbel</maintainer>
   <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
 
   <license>BSD</license>
@@ -22,8 +21,8 @@
 
   <run_depend>husky_description</run_depend>
   <run_depend>joint_state_publisher</run_depend>
-  <run_depend>joint_state_publisher_gui</run_depend>
   <run_depend>robot_state_publisher</run_depend>
+  <run_depend>joint_state_publisher_gui</run_depend>
   <run_depend>rviz</run_depend>
   <run_depend>rviz_imu_plugin</run_depend>
 

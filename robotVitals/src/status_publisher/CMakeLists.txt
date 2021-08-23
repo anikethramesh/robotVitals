@@ -79,6 +79,6 @@ target_link_libraries(status_sound_publisher_node
    ${catkin_LIBRARIES}
  )
 
-catkin_install_python(PROGRAMS src/pose_publisher.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+# catkin_install_python(PROGRAMS src/pose_publisher.py
+#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+# )

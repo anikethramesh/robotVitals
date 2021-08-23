@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/aniketh/programming/robotVitals/robotVitals/src/laser_noise/src/laser_noise_node.cpp
+/home/aniketh/programming/robotVitals/robotVitals/src/laser_noise/src/laser_noise_spacebartrigger.cpp
 ros/ros.h
 -
 ros/console.h
@@ -22,6 +22,14 @@ boost/random/uniform_real.hpp
 boost/random/variate_generator.hpp
 -
 geometry_msgs/PoseWithCovarianceStamped.h
+-
+termios.h
+-
+unistd.h
+-
+fcntl.h
+-
+stdio.h
 -
 
 /opt/ros/melodic/include/geometry_msgs/Point.h

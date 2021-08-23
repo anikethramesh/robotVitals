@@ -1065,6 +1065,19 @@ _run_tests_husky_viz_roslaunch-check_launch/fast:
 .PHONY : _run_tests_husky_viz_roslaunch-check_launch/fast
 
 #=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -1156,19 +1169,6 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -1219,6 +1219,19 @@ sampler: cmake_check_build_system
 sampler/fast:
 	$(MAKE) -f rv_test/CMakeFiles/sampler.dir/build.make rv_test/CMakeFiles/sampler.dir/build
 .PHONY : sampler/fast
+
+#=============================================================================
+# Target rules for targets named snr_estimator
+
+# Build rule for target.
+snr_estimator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 snr_estimator
+.PHONY : snr_estimator
+
+# fast build rule for target.
+snr_estimator/fast:
+	$(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/build
+.PHONY : snr_estimator/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
@@ -1624,6 +1637,19 @@ clean_test_results_husky_base/fast:
 .PHONY : clean_test_results_husky_base/fast
 
 #=============================================================================
+# Target rules for targets named event_indicator
+
+# Build rule for target.
+event_indicator: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 event_indicator
+.PHONY : event_indicator
+
+# fast build rule for target.
+event_indicator/fast:
+	$(MAKE) -f laser_noise/CMakeFiles/event_indicator.dir/build.make laser_noise/CMakeFiles/event_indicator.dir/build
+.PHONY : event_indicator/fast
+
+#=============================================================================
 # Target rules for targets named laser_noise_node
 
 # Build rule for target.
@@ -1635,6 +1661,19 @@ laser_noise_node: cmake_check_build_system
 laser_noise_node/fast:
 	$(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/build
 .PHONY : laser_noise_node/fast
+
+#=============================================================================
+# Target rules for targets named activate_noise_joystick
+
+# Build rule for target.
+activate_noise_joystick: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 activate_noise_joystick
+.PHONY : activate_noise_joystick
+
+# fast build rule for target.
+activate_noise_joystick/fast:
+	$(MAKE) -f laser_noise/CMakeFiles/activate_noise_joystick.dir/build.make laser_noise/CMakeFiles/activate_noise_joystick.dir/build
+.PHONY : activate_noise_joystick/fast
 
 #=============================================================================
 # Target rules for targets named status_sound_publisher_node
@@ -2056,6 +2095,7 @@ help:
 	@echo "... _run_tests_husky_viz_roslaunch-check"
 	@echo "... run_tests_husky_viz_roslaunch-check_launch"
 	@echo "... _run_tests_husky_viz_roslaunch-check_launch"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... laserScanVisualiser"
@@ -2063,11 +2103,11 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... sampler"
+	@echo "... snr_estimator"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... controller_manager_msgs_generate_messages_eus"
@@ -2099,7 +2139,9 @@ help:
 	@echo "... run_tests_husky_base_roslaunch-check_launch"
 	@echo "... _run_tests_husky_base_roslaunch-check_launch"
 	@echo "... clean_test_results_husky_base"
+	@echo "... event_indicator"
 	@echo "... laser_noise_node"
+	@echo "... activate_noise_joystick"
 	@echo "... status_sound_publisher_node"
 	@echo "... cam_compress"
 	@echo "... experiment_logger"

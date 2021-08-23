@@ -11,9 +11,12 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
 )
 
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+# SET(CURSES_USE_NCURSES TRUE)
 
+
+## System dependencies are found with CMake's conventions
+find_package(Boost REQUIRED COMPONENTS system)
+find_package(Curses REQUIRED)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -96,6 +99,8 @@ catkin_package(
 # include_directories(include)
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  ${Boost_INCLUDE_DIRS}
+  ${CURSES_INCLUDE_DIRS}  
 )
 
 ## Declare a cpp library
@@ -104,16 +109,29 @@ include_directories(
 # )
 
 ## Declare a cpp executable
- add_executable(laser_noise_node src/laser_noise_node.cpp)
+add_executable(laser_noise_node src/laser_noise_spacebartrigger.cpp)
+add_executable(event_indicator src/event_indicator.cpp)
+add_executable(activate_noise_joystick src/activate_noise_joystick.cpp)
+
+target_link_libraries(activate_noise_joystick 
+  ${catkin_LIBRARIES}
+)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(laser_noise_node laser_noise_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
- target_link_libraries(laser_noise_node
-   ${catkin_LIBRARIES}
- )
+target_link_libraries(laser_noise_node
+ ${catkin_LIBRARIES}
+ # ${CURSES_LIBRARIES}
+)
+
+target_link_libraries(event_indicator
+ ${catkin_LIBRARIES}
+ ${CURSES_LIBRARIES}
+)
+
 
 #############
 ## Install ##

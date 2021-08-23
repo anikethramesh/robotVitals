@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<launch>
+	
+	<!-- parameters for the husky packages e.g. for husky description -->
+	<arg name="laser_enabled" default="true"/>
+	<arg name="realsense_enabled" default="true"/>
+	<arg name="urdf_extras" default=""/>
+
+	<!-- spawning coordinates in gazebo -->
+	<arg name="x" default="-7.5"/>
+	<arg name="y" default="-11.5"/>
+	<arg name="z" default="0.00"/>
+	<arg name="yaw" default="0.00"/>
+<!-- 	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/test.world"/> -->
+	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/test_empty.world"/>
+<!-- 	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/test_motionErrors.world"/> -->
+<!-- 	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/test_SNR.world"/> -->
+
+<!--  	<include file="$(find husky_gazebo)/launch/husky_empty_world.launch">
+		<arg name="laser_enabled" value="$(arg laser_enabled)"/>
+		<arg name="realsense_enabled" value="$(arg realsense_enabled)"/>
+		<arg name="world_name" value="$(find husky_gazebo)/worlds/testWorld_2.sdf"/>
+		<arg name="world_name" value="$(find husky_gazebo)/worlds/vitalsTestArena.world"/>
+		<arg name="x" value="$(arg x)"/>
+		<arg name="y" value="$(arg y)"/>
+		<arg name="z" value="$(arg z)"/>
+		<arg name="yaw" value="$(arg yaw)"/>	
+	</include>
+ -->
+
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(arg world_name)"/> <!-- world_name is wrt GAZEBO_RESOURCE_PATH environment variable -->
+		<arg name="paused" value="false"/>
+		<arg name="use_sim_time" value="true"/>
+		<arg name="gui" value="true"/>
+		<arg name="headless" value="false"/>
+		<arg name="debug" value="false"/>
+	</include>
+
+	<include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+		<arg name="laser_enabled" value="$(arg laser_enabled)"/>
+		<arg name="realsense_enabled" value="$(arg realsense_enabled)"/>
+		<arg name="urdf_extras" value="$(arg urdf_extras)"/>
+		<arg name="x" value="$(arg x)"/>
+		<arg name="y" value="$(arg y)"/>
+		<arg name="z" value="$(arg z)"/>
+		<arg name="yaw" value="$(arg yaw)"/>
+	</include>
+
+	<include file="$(find husky_navigation)/launch/move_base_mapless_demo.launch"/>
+	<include file="$(find husky_viz)/launch/view_robot.launch"/>
+
+ <!-- joy node -->
+	<node respawn="true" pkg="joy"
+	type="joy_node" name="joy_activate" >
+		<param name="dev" type="string" value="/dev/input/js0" />
+		<param name="deadzone" value="0.12" />
+	</node>
+
+
+<!-- 	<node name='rv_sampler' pkg='rv_test' type='sampler'/> -->
+	<!-- <node name='laser_noise' pkg ='laser_noise' type='laser_noise_node'/> -->
+	<node pkg="status_publisher" type="status_publisher" name="status_publisher" output="screen"/>
+	<!-- <node pkg="status_publisher" type="experiment_logger" name="experiment_logger" output="screen"/> -->
+	<node pkg="status_publisher" type="status_sound_publisher_node" name="status_sound_publisher_node" output="screen"/>	
+    <node pkg="status_publisher" name="pose_publisher" type="pose_publisher.py"/>
+	<node name='laserScanVisualiser' pkg='rv_test' type='laserScanVisualiser'/>
+	<node name='activate_noise_joystick' pkg='laser_noise' type='activate_noise_joystick'/>
+	<node name='snr_estimator' pkg='rv_test' type='snr_estimator'/>
+
+<!-- 		<node pkg="rosbag" type="record" args="-O ~/programming/bagfiles/trial1_empty_nopdf.bag husky_velocity_controller/odom imu/data move_base/current_goal odometry/filtered  psnr_laserScan" name="record" output="screen"/> -->
+
+</launch>

@@ -80,6 +80,16 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -91,16 +101,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -166,6 +166,21 @@ preinstall/fast:
 depend:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
@@ -273,21 +288,6 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
 rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
@@ -347,6 +347,21 @@ sampler/fast:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/sampler.dir/build.make rv_test/CMakeFiles/sampler.dir/build
 .PHONY : sampler/fast
 
+# Convenience name for target.
+rv_test/CMakeFiles/snr_estimator.dir/rule:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/snr_estimator.dir/rule
+.PHONY : rv_test/CMakeFiles/snr_estimator.dir/rule
+
+# Convenience name for target.
+snr_estimator: rv_test/CMakeFiles/snr_estimator.dir/rule
+
+.PHONY : snr_estimator
+
+# fast build rule for target.
+snr_estimator/fast:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/build
+.PHONY : snr_estimator/fast
+
 src/laserScanVisualiser.o: src/laserScanVisualiser.cpp.o
 
 .PHONY : src/laserScanVisualiser.o
@@ -401,6 +416,33 @@ src/sampler.cpp.s:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/sampler.dir/build.make rv_test/CMakeFiles/sampler.dir/src/sampler.cpp.s
 .PHONY : src/sampler.cpp.s
 
+src/snr_estimator.o: src/snr_estimator.cpp.o
+
+.PHONY : src/snr_estimator.o
+
+# target to build an object file
+src/snr_estimator.cpp.o:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/src/snr_estimator.cpp.o
+.PHONY : src/snr_estimator.cpp.o
+
+src/snr_estimator.i: src/snr_estimator.cpp.i
+
+.PHONY : src/snr_estimator.i
+
+# target to preprocess a source file
+src/snr_estimator.cpp.i:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/src/snr_estimator.cpp.i
+.PHONY : src/snr_estimator.cpp.i
+
+src/snr_estimator.s: src/snr_estimator.cpp.s
+
+.PHONY : src/snr_estimator.s
+
+# target to generate assembly for a file
+src/snr_estimator.cpp.s:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/src/snr_estimator.cpp.s
+.PHONY : src/snr_estimator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -409,6 +451,8 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... list_install_components"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... laserScanVisualiser"
@@ -417,13 +461,12 @@ help:
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... list_install_components"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... edit_cache"
 	@echo "... sampler"
+	@echo "... snr_estimator"
 	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... src/laserScanVisualiser.o"
@@ -432,6 +475,9 @@ help:
 	@echo "... src/sampler.o"
 	@echo "... src/sampler.i"
 	@echo "... src/sampler.s"
+	@echo "... src/snr_estimator.o"
+	@echo "... src/snr_estimator.i"
+	@echo "... src/snr_estimator.s"
 .PHONY : help
 
 

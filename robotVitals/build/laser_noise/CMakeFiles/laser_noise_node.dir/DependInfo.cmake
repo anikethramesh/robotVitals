@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/aniketh/programming/robotVitals/robotVitals/src/support_scripts/src/eventIndicator.cpp" "/home/aniketh/programming/robotVitals/robotVitals/build/support_scripts/CMakeFiles/eventIndicator.dir/src/eventIndicator.cpp.o"
+  "/home/aniketh/programming/robotVitals/robotVitals/src/laser_noise/src/laser_noise_node.cpp" "/home/aniketh/programming/robotVitals/robotVitals/build/laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -12,7 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
-  "ROS_PACKAGE_NAME=\"support_scripts\""
+  "ROS_PACKAGE_NAME=\"laser_noise\""
   )
 
 # The include file search paths:

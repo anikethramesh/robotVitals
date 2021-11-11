@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD:robotVitals/build/status_publisher/CMakeFiles/status_sound_publisher_node.dir/CXX.includecache
-/home/aniketh/programming/robotVitals/robotVitals/src/status_publisher/src/status_sound_publisher_node.cpp
-=======
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts/src/eventIndicator.cpp
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/build/support_scripts/CMakeFiles/eventIndicator.dir/CXX.includecache
+/home/aniketh/programming/robotVitals/robotVitals/src/support_scripts/src/eventIndicator.cpp
 ros/ros.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts/src/ros/ros.h
+/home/aniketh/programming/robotVitals/robotVitals/src/support_scripts/src/ros/ros.h
 std_msgs/Bool.h
-/home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts/src/std_msgs/Bool.h
+/home/aniketh/programming/robotVitals/robotVitals/src/support_scripts/src/std_msgs/Bool.h
 iostream
 -
 termios.h
@@ -672,39 +668,7 @@ ros/forwards.h
 
 /opt/ros/melodic/include/rosconsole/macros_generated.h
 
-<<<<<<< HEAD:robotVitals/build/status_publisher/CMakeFiles/status_sound_publisher_node.dir/CXX.includecache
-/opt/ros/melodic/include/sound_play/SoundRequest.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/opt/ros/melodic/include/sound_play/sound_play.h
-string
--
-ros/ros.h
--
-ros/node_handle.h
--
-sound_play/SoundRequest.h
--
-boost/thread.hpp
--
-
-/opt/ros/melodic/include/std_msgs/Int8.h
-=======
-/opt/ros/kinetic/include/std_msgs/Bool.h
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/build/support_scripts/CMakeFiles/eventIndicator.dir/CXX.includecache
+/opt/ros/melodic/include/std_msgs/Bool.h
 string
 -
 vector

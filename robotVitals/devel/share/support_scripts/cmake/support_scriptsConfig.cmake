@@ -67,27 +67,15 @@ set(support_scripts_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-<<<<<<< HEAD:robotVitals/devel/share/status_publisher/cmake/status_publisherConfig.cmake
-  set(status_publisher_SOURCE_PREFIX /home/aniketh/programming/robotVitals/robotVitals/src/status_publisher)
-  set(status_publisher_DEVEL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/devel)
-  set(status_publisher_INSTALL_PREFIX "")
-  set(status_publisher_PREFIX ${status_publisher_DEVEL_PREFIX})
-else()
-  set(status_publisher_SOURCE_PREFIX "")
-  set(status_publisher_DEVEL_PREFIX "")
-  set(status_publisher_INSTALL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/install)
-  set(status_publisher_PREFIX ${status_publisher_INSTALL_PREFIX})
-=======
-  set(support_scripts_SOURCE_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts)
-  set(support_scripts_DEVEL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/devel)
+  set(support_scripts_SOURCE_PREFIX /home/aniketh/programming/robotVitals/robotVitals/src/support_scripts)
+  set(support_scripts_DEVEL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/devel)
   set(support_scripts_INSTALL_PREFIX "")
   set(support_scripts_PREFIX ${support_scripts_DEVEL_PREFIX})
 else()
   set(support_scripts_SOURCE_PREFIX "")
   set(support_scripts_DEVEL_PREFIX "")
-  set(support_scripts_INSTALL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/install)
+  set(support_scripts_INSTALL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/install)
   set(support_scripts_PREFIX ${support_scripts_INSTALL_PREFIX})
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/devel/share/support_scripts/cmake/support_scriptsConfig.cmake
 endif()
 
 # warn when using a deprecated package
@@ -122,11 +110,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'support_scripts' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-<<<<<<< HEAD:robotVitals/devel/share/status_publisher/cmake/status_publisherConfig.cmake
-      message(FATAL_ERROR "Project 'status_publisher' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/aniketh/programming/robotVitals/robotVitals/src/status_publisher/${idir}'.  ${_report}")
-=======
-      message(FATAL_ERROR "Project 'support_scripts' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts/${idir}'.  ${_report}")
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/devel/share/support_scripts/cmake/support_scriptsConfig.cmake
+      message(FATAL_ERROR "Project 'support_scripts' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/aniketh/programming/robotVitals/robotVitals/src/support_scripts/${idir}'.  ${_report}")
     endif()
     _list_append_unique(support_scripts_INCLUDE_DIRS ${include})
   endforeach()
@@ -170,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/aniketh/programming/robotVitals/robotVitals/devel/lib;/home/aniketh/programming/robotVitals/robotVitals/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aniketh/programming/robotVitals/robotVitals/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

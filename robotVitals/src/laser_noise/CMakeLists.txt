@@ -109,7 +109,6 @@ include_directories(
 # )
 
 ## Declare a cpp executable
-<<<<<<< HEAD
 # add_executable(laser_noise_node src/laser_noise_spacebartrigger.cpp)
 add_executable(laser_noise_node src/laser_noise_node.cpp)
 add_executable(event_indicator src/event_indicator.cpp)
@@ -118,17 +117,12 @@ add_executable(activate_noise_joystick src/activate_noise_joystick.cpp)
 target_link_libraries(activate_noise_joystick 
   ${catkin_LIBRARIES}
 )
-=======
-# add_executable(laser_noise_node src/laser_noise_node.cpp)
-add_executable(laserNoiseNode src/laserNoiseNode.cpp)
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(laser_noise_node laser_noise_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
-<<<<<<< HEAD
 target_link_libraries(laser_noise_node
  ${catkin_LIBRARIES}
  # ${CURSES_LIBRARIES}
@@ -138,10 +132,6 @@ target_link_libraries(event_indicator
  ${catkin_LIBRARIES}
  ${CURSES_LIBRARIES}
 )
-=======
-target_link_libraries(laserNoiseNode ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
-# target_link_libraries(laserScanVisualiser ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 
 #############

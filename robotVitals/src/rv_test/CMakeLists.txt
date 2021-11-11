@@ -137,15 +137,12 @@ target_link_libraries(sampler ${catkin_LIBRARIES})
 add_executable(laserScanVisualiser src/laserScanVisualiser.cpp)
 target_link_libraries(laserScanVisualiser ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})
 
-<<<<<<< HEAD
 catkin_install_python(PROGRAMS src/snr_estimator.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
-=======
+
 add_executable(snr_estimator src/snr_estimator.cpp)
 target_link_libraries(snr_estimator ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})
-
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # add_executable(snr_estimator src/snr_estimator.cpp)
 # target_link_libraries(snr_estimator ${catkin_LIBRARIES}  ${OpenCV_LIBRARIES})

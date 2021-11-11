@@ -4,11 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD:robotVitals/build/status_publisher/CMakeFiles/experiment_logger.dir/DependInfo.cmake
-  "/home/aniketh/programming/robotVitals/robotVitals/src/status_publisher/src/experiment_logger.cpp" "/home/aniketh/programming/robotVitals/robotVitals/build/status_publisher/CMakeFiles/experiment_logger.dir/src/experiment_logger.cpp.o"
-=======
-  "/home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts/src/exponentialMovingAverage.cpp" "/home/aniketh/rv_ws/robotVitals/robotVitals/build/support_scripts/CMakeFiles/exponentialMovingAverage.dir/src/exponentialMovingAverage.cpp.o"
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/build/support_scripts/CMakeFiles/exponentialMovingAverage.dir/DependInfo.cmake
+  "/home/aniketh/programming/robotVitals/robotVitals/src/support_scripts/src/exponentialMovingAverage.cpp" "/home/aniketh/programming/robotVitals/robotVitals/build/support_scripts/CMakeFiles/exponentialMovingAverage.dir/src/exponentialMovingAverage.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,14 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-<<<<<<< HEAD:robotVitals/build/status_publisher/CMakeFiles/experiment_logger.dir/DependInfo.cmake
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/usr/include/opencv"
-=======
-  "/opt/ros/kinetic/include"
-  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/build/support_scripts/CMakeFiles/exponentialMovingAverage.dir/DependInfo.cmake
   )
 
 # Targets to which this target links.

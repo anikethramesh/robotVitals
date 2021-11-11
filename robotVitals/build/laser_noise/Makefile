@@ -56,7 +56,6 @@ CMAKE_BINARY_DIR = /home/aniketh/programming/robotVitals/robotVitals/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-<<<<<<< HEAD
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -68,39 +67,6 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-=======
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Special rule for the target install
 install: preinstall
@@ -114,18 +80,10 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-<<<<<<< HEAD
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
 .PHONY : list_install_components
-=======
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Special rule for the target list_install_components
 list_install_components/fast: list_install_components
@@ -210,7 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-<<<<<<< HEAD
 laser_noise/CMakeFiles/event_indicator.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 laser_noise/CMakeFiles/event_indicator.dir/rule
 .PHONY : laser_noise/CMakeFiles/event_indicator.dir/rule
@@ -229,19 +186,13 @@ event_indicator/fast:
 laser_noise/CMakeFiles/laser_noise_node.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 laser_noise/CMakeFiles/laser_noise_node.dir/rule
 .PHONY : laser_noise/CMakeFiles/laser_noise_node.dir/rule
-=======
-laser_noise/CMakeFiles/laserNoiseNode.dir/rule:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 laser_noise/CMakeFiles/laserNoiseNode.dir/rule
-.PHONY : laser_noise/CMakeFiles/laserNoiseNode.dir/rule
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
-laserNoiseNode: laser_noise/CMakeFiles/laserNoiseNode.dir/rule
+laser_noise_node: laser_noise/CMakeFiles/laser_noise_node.dir/rule
 
-.PHONY : laserNoiseNode
+.PHONY : laser_noise_node
 
 # fast build rule for target.
-<<<<<<< HEAD
 laser_noise_node/fast:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/build
 .PHONY : laser_noise_node/fast
@@ -316,56 +267,31 @@ src/event_indicator.cpp.s:
 .PHONY : src/event_indicator.cpp.s
 
 src/laser_noise_node.o: src/laser_noise_node.cpp.o
-=======
-laserNoiseNode/fast:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/build
-.PHONY : laserNoiseNode/fast
 
-src/laserNoiseNode.o: src/laserNoiseNode.cpp.o
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
-
-.PHONY : src/laserNoiseNode.o
+.PHONY : src/laser_noise_node.o
 
 # target to build an object file
-<<<<<<< HEAD
 src/laser_noise_node.cpp.o:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.o
 .PHONY : src/laser_noise_node.cpp.o
-=======
-src/laserNoiseNode.cpp.o:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/src/laserNoiseNode.cpp.o
-.PHONY : src/laserNoiseNode.cpp.o
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
-src/laserNoiseNode.i: src/laserNoiseNode.cpp.i
+src/laser_noise_node.i: src/laser_noise_node.cpp.i
 
-.PHONY : src/laserNoiseNode.i
+.PHONY : src/laser_noise_node.i
 
 # target to preprocess a source file
-<<<<<<< HEAD
 src/laser_noise_node.cpp.i:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.i
 .PHONY : src/laser_noise_node.cpp.i
-=======
-src/laserNoiseNode.cpp.i:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/src/laserNoiseNode.cpp.i
-.PHONY : src/laserNoiseNode.cpp.i
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
-src/laserNoiseNode.s: src/laserNoiseNode.cpp.s
+src/laser_noise_node.s: src/laser_noise_node.cpp.s
 
-.PHONY : src/laserNoiseNode.s
+.PHONY : src/laser_noise_node.s
 
 # target to generate assembly for a file
-<<<<<<< HEAD
 src/laser_noise_node.cpp.s:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.s
 .PHONY : src/laser_noise_node.cpp.s
-=======
-src/laserNoiseNode.cpp.s:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laserNoiseNode.dir/build.make laser_noise/CMakeFiles/laserNoiseNode.dir/src/laserNoiseNode.cpp.s
-.PHONY : src/laserNoiseNode.cpp.s
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Help Target
 help:
@@ -373,7 +299,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-<<<<<<< HEAD
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
@@ -393,19 +318,6 @@ help:
 	@echo "... src/laser_noise_node.o"
 	@echo "... src/laser_noise_node.i"
 	@echo "... src/laser_noise_node.s"
-=======
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... list_install_components"
-	@echo "... install"
-	@echo "... laserNoiseNode"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... test"
-	@echo "... src/laserNoiseNode.o"
-	@echo "... src/laserNoiseNode.i"
-	@echo "... src/laserNoiseNode.s"
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 .PHONY : help
 
 

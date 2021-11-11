@@ -1,8 +1,0 @@
-prefix=/home/aniketh/programming/robotVitals/robotVitals/devel
-
-Name: robot_pose_publisher
-Description: Description of robot_pose_publisher
-Version: 0.2.4
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

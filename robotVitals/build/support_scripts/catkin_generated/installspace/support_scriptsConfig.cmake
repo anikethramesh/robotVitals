@@ -67,27 +67,15 @@ set(support_scripts_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-<<<<<<< HEAD:robotVitals/build/status_publisher/catkin_generated/installspace/status_publisherConfig.cmake
-  set(status_publisher_SOURCE_PREFIX /home/aniketh/programming/robotVitals/robotVitals/src/status_publisher)
-  set(status_publisher_DEVEL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/devel)
-  set(status_publisher_INSTALL_PREFIX "")
-  set(status_publisher_PREFIX ${status_publisher_DEVEL_PREFIX})
-else()
-  set(status_publisher_SOURCE_PREFIX "")
-  set(status_publisher_DEVEL_PREFIX "")
-  set(status_publisher_INSTALL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/install)
-  set(status_publisher_PREFIX ${status_publisher_INSTALL_PREFIX})
-=======
-  set(support_scripts_SOURCE_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts)
-  set(support_scripts_DEVEL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/devel)
+  set(support_scripts_SOURCE_PREFIX /home/aniketh/programming/robotVitals/robotVitals/src/support_scripts)
+  set(support_scripts_DEVEL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/devel)
   set(support_scripts_INSTALL_PREFIX "")
   set(support_scripts_PREFIX ${support_scripts_DEVEL_PREFIX})
 else()
   set(support_scripts_SOURCE_PREFIX "")
   set(support_scripts_DEVEL_PREFIX "")
-  set(support_scripts_INSTALL_PREFIX /home/aniketh/rv_ws/robotVitals/robotVitals/install)
+  set(support_scripts_INSTALL_PREFIX /home/aniketh/programming/robotVitals/robotVitals/install)
   set(support_scripts_PREFIX ${support_scripts_INSTALL_PREFIX})
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/build/support_scripts/catkin_generated/installspace/support_scriptsConfig.cmake
 endif()
 
 # warn when using a deprecated package
@@ -166,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/aniketh/programming/robotVitals/robotVitals/install/lib;/home/aniketh/programming/robotVitals/robotVitals/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/aniketh/programming/robotVitals/robotVitals/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

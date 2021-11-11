@@ -46,6 +46,10 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCL
     <param name="local_costmap/width" value="10.0"/>
     <param name="local_costmap/height" value="10.0"/>
 
+<!-- Customised. Delete these lines for default behaviour -->
+    <param name = "recovery_behavior_enabled" value ="false"/>
+    <param name="clearing_roatation_allowed" value="false"/>
+
     <!-- static global costmap, static map provides size -->
     <rosparam file="$(find husky_navigation)/config/costmap_global_static.yaml" command="load" ns="global_costmap" unless="$(arg no_static_map)"/>
     

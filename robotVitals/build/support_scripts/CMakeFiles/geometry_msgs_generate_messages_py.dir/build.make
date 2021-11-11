@@ -62,21 +62,11 @@ support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/build: geometr
 
 .PHONY : support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 
-<<<<<<< HEAD:robotVitals/build/status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make
-status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build/status_publisher && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_lisp.dir/cmake_clean.cmake
-.PHONY : status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/clean
-
-status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/depend:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aniketh/programming/robotVitals/robotVitals/src /home/aniketh/programming/robotVitals/robotVitals/src/status_publisher /home/aniketh/programming/robotVitals/robotVitals/build /home/aniketh/programming/robotVitals/robotVitals/build/status_publisher /home/aniketh/programming/robotVitals/robotVitals/build/status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : status_publisher/CMakeFiles/nav_msgs_generate_messages_lisp.dir/depend
-=======
 support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build/support_scripts && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/aniketh/programming/robotVitals/robotVitals/build/support_scripts && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend:
-	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aniketh/rv_ws/robotVitals/robotVitals/src /home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts /home/aniketh/rv_ws/robotVitals/robotVitals/build /home/aniketh/rv_ws/robotVitals/robotVitals/build/support_scripts /home/aniketh/rv_ws/robotVitals/robotVitals/build/support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aniketh/programming/robotVitals/robotVitals/src /home/aniketh/programming/robotVitals/robotVitals/src/support_scripts /home/aniketh/programming/robotVitals/robotVitals/build /home/aniketh/programming/robotVitals/robotVitals/build/support_scripts /home/aniketh/programming/robotVitals/robotVitals/build/support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/depend
->>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b:robotVitals/build/support_scripts/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make
 

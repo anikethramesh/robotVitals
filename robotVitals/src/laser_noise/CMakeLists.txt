@@ -109,7 +109,8 @@ include_directories(
 # )
 
 ## Declare a cpp executable
-add_executable(laser_noise_node src/laser_noise_spacebartrigger.cpp)
+# add_executable(laser_noise_node src/laser_noise_spacebartrigger.cpp)
+add_executable(laser_noise_node src/laser_noise_node.cpp)
 add_executable(event_indicator src/event_indicator.cpp)
 add_executable(activate_noise_joystick src/activate_noise_joystick.cpp)
 

@@ -52,7 +52,3 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/status_publisher" TYPE FILE FILES "/home/aniketh/programming/robotVitals/robotVitals/src/status_publisher/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/status_publisher" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/status_publisher/catkin_generated/installspace/pose_publisher.py")
-endif()
-

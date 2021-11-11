@@ -24,7 +24,7 @@ class LaserNoise{
 			scan_with_noise_pub_ = n_.advertise<sensor_msgs::LaserScan>("scan_with_noise", 20);
 			laser_noise_active_pub_ = n_.advertise<std_msgs::Bool>("laser_noise_active", 20);
 
-			noise_activation_sub_ = n_.subscribe<std_msgs::Int8>("/activate_noise",20, &LaserNoise::timerNoiseCallback, this);
+			noise_activation_sub_ = n_.subscribe<std_msgs::Int8>("/pdf_event",20, &LaserNoise::timerNoiseCallback, this);
 
 			// timer_noise_ = n_.createTimer(ros::Duration(20), &LaserNoise::timerNoiseCallback, this);
 			timer_trigger_ = false;
@@ -36,12 +36,12 @@ class LaserNoise{
 			
 			if(msg->data){
 				timer_trigger_ = true;
-				noise_scale_ = 0.15*msg->data;
+				ROS_INFO("NOISE IS ACTIVE");
+				// noise_scale_ = 0.15*msg->data;
 			}
 			else
 				timer_trigger_ = false;
 			// timer_noise_.stop();
-			ROS_INFO("TIMER ACTIVATED");
 		}
 
 		// Utility function for adding Guassian noise

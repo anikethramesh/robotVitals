@@ -52,3 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rv_test" TYPE FILE FILES "/home/aniketh/programming/robotVitals/robotVitals/src/rv_test/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/rv_test" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/rv_test/catkin_generated/installspace/snr_estimator.py")
+endif()
+

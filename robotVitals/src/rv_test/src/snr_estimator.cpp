@@ -40,7 +40,7 @@ class SNREstimator{
 			baseScan = cv::Mat::zeros(width, height, CV_8UC1);
 
 			psnr_pub_ = n_.advertise<std_msgs::Float64>("/psnr_laserScan",10);
-			sub1_ = n_.subscribe<sensor_msgs::LaserScan>("scan_with_noise",10, &SNREstimator::get_noiseStats,this);
+			sub1_ = n_.subscribe<sensor_msgs::LaserScan>("scan",10, &SNREstimator::get_noiseStats,this);
 		}
 
 		void set_imageFromScan(sensor_msgs::LaserScan scannerObj, bool showImage){

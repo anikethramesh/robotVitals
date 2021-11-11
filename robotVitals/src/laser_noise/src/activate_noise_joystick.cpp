@@ -25,7 +25,7 @@ class JoyActivate{
 			std_msgs::Int8 msg;
 			// int counter = 0;
 			if(joy->buttons[0] == 1)
-				++count;
+				count = 1;
 			// 	counter=1;
 			// else if(joy->buttons[1] == 1)
 			// 	counter=2;
@@ -33,8 +33,8 @@ class JoyActivate{
 			// 	counter=3;
 			// else if(joy->buttons[3] == 1)
 			// 	counter=4;
-			// else
-			// 	counter=0;
+			else
+				count=0;
 			
 			msg.data = count;
 		  event_pub_.publish(msg);

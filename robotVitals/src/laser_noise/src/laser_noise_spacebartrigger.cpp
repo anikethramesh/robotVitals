@@ -24,22 +24,28 @@ class LaserNoise{
 			// private_nh.param("noise_period", noise_period_, 30.0)
 			laser_sub_ = n_.subscribe<sensor_msgs::LaserScan>("scan", 20, &LaserNoise::laserReadCallBack, this);
 
+			timer_trigger_ = false;
+			timer_noise_ = n_.createTimer(ros::Duration(15), &LaserNoise::timerNoiseCallback, this);
 			scan_with_noise_pub_ = n_.advertise<sensor_msgs::LaserScan>("scan_with_noise", 20);
 			laser_noise_active_pub_ = n_.advertise<std_msgs::Bool>("laser_noise_active", 20);
 
-			timer_noise_ = n_.createTimer(ros::Duration(20), &LaserNoise::timerNoiseCallback, this);
-			timer_trigger_ = false;
-			noise_scale_ = 0.3;
+			noise_scale_ = 0.6;
 		}
 
 		void timerNoiseCallback(const ros::TimerEvent&)
 		{
-			timer_trigger_ = !timer_trigger_;
+			ROS_INFO("Counter is %f",counter);
+			if(counter>=3)
+				timer_trigger_ = false;
+			else
+				timer_trigger_ = !timer_trigger_;
+
 			if(timer_trigger_){
-				noise_scale_ = 0.05*counter;
+				// noise_scale_ = 0.05*counter;
 				++counter;
+				// if(counter==(double)3)
+				// 	timer_noise_.stop();
 			}
-			// timer_noise_.stop();
 			// ROS_INFO("TIMER ACTIVATED");
 		}
 

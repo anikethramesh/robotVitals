@@ -266,32 +266,32 @@ src/event_indicator.cpp.s:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/event_indicator.dir/build.make laser_noise/CMakeFiles/event_indicator.dir/src/event_indicator.cpp.s
 .PHONY : src/event_indicator.cpp.s
 
-src/laser_noise_spacebartrigger.o: src/laser_noise_spacebartrigger.cpp.o
+src/laser_noise_node.o: src/laser_noise_node.cpp.o
 
-.PHONY : src/laser_noise_spacebartrigger.o
+.PHONY : src/laser_noise_node.o
 
 # target to build an object file
-src/laser_noise_spacebartrigger.cpp.o:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_spacebartrigger.cpp.o
-.PHONY : src/laser_noise_spacebartrigger.cpp.o
+src/laser_noise_node.cpp.o:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.o
+.PHONY : src/laser_noise_node.cpp.o
 
-src/laser_noise_spacebartrigger.i: src/laser_noise_spacebartrigger.cpp.i
+src/laser_noise_node.i: src/laser_noise_node.cpp.i
 
-.PHONY : src/laser_noise_spacebartrigger.i
+.PHONY : src/laser_noise_node.i
 
 # target to preprocess a source file
-src/laser_noise_spacebartrigger.cpp.i:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_spacebartrigger.cpp.i
-.PHONY : src/laser_noise_spacebartrigger.cpp.i
+src/laser_noise_node.cpp.i:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.i
+.PHONY : src/laser_noise_node.cpp.i
 
-src/laser_noise_spacebartrigger.s: src/laser_noise_spacebartrigger.cpp.s
+src/laser_noise_node.s: src/laser_noise_node.cpp.s
 
-.PHONY : src/laser_noise_spacebartrigger.s
+.PHONY : src/laser_noise_node.s
 
 # target to generate assembly for a file
-src/laser_noise_spacebartrigger.cpp.s:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_spacebartrigger.cpp.s
-.PHONY : src/laser_noise_spacebartrigger.cpp.s
+src/laser_noise_node.cpp.s:
+	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f laser_noise/CMakeFiles/laser_noise_node.dir/build.make laser_noise/CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.s
+.PHONY : src/laser_noise_node.cpp.s
 
 # Help Target
 help:
@@ -315,9 +315,9 @@ help:
 	@echo "... src/event_indicator.o"
 	@echo "... src/event_indicator.i"
 	@echo "... src/event_indicator.s"
-	@echo "... src/laser_noise_spacebartrigger.o"
-	@echo "... src/laser_noise_spacebartrigger.i"
-	@echo "... src/laser_noise_spacebartrigger.s"
+	@echo "... src/laser_noise_node.o"
+	@echo "... src/laser_noise_node.i"
+	@echo "... src/laser_noise_node.s"
 .PHONY : help
 
 

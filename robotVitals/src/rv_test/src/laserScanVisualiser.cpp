@@ -12,7 +12,7 @@ using namespace std;
 using namespace cv;
 
 //global
-const int width = 400;
+const int width = 600;
 const int height = 600;
 const int centerX = width/2;
 const int centerY = height/2;

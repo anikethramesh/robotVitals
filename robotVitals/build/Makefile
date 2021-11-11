@@ -1065,19 +1065,6 @@ _run_tests_husky_viz_roslaunch-check_launch/fast:
 .PHONY : _run_tests_husky_viz_roslaunch-check_launch/fast
 
 #=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named roscpp_generate_messages_nodejs
 
 # Build rule for target.
@@ -1169,6 +1156,19 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -1219,19 +1219,6 @@ sampler: cmake_check_build_system
 sampler/fast:
 	$(MAKE) -f rv_test/CMakeFiles/sampler.dir/build.make rv_test/CMakeFiles/sampler.dir/build
 .PHONY : sampler/fast
-
-#=============================================================================
-# Target rules for targets named snr_estimator
-
-# Build rule for target.
-snr_estimator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 snr_estimator
-.PHONY : snr_estimator
-
-# fast build rule for target.
-snr_estimator/fast:
-	$(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/build
-.PHONY : snr_estimator/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_eus
@@ -2095,7 +2082,6 @@ help:
 	@echo "... _run_tests_husky_viz_roslaunch-check"
 	@echo "... run_tests_husky_viz_roslaunch-check_launch"
 	@echo "... _run_tests_husky_viz_roslaunch-check_launch"
-	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... laserScanVisualiser"
@@ -2103,11 +2089,11 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... sampler"
-	@echo "... snr_estimator"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... controller_manager_msgs_generate_messages_eus"

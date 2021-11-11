@@ -130,6 +130,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+<<<<<<< HEAD
   include("/home/aniketh/programming/robotVitals/robotVitals/build/gtest/cmake_install.cmake")
   include("/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_desktop/cmake_install.cmake")
   include("/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_robot/cmake_install.cmake")
@@ -145,6 +146,23 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_base/cmake_install.cmake")
   include("/home/aniketh/programming/robotVitals/robotVitals/build/laser_noise/cmake_install.cmake")
   include("/home/aniketh/programming/robotVitals/robotVitals/build/status_publisher/cmake_install.cmake")
+=======
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/gtest/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_desktop/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_robot/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_simulator/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_msgs/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_bringup/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_control/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_description/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_gazebo/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_navigation/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_viz/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/rv_test/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/support_scripts/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/husky/husky_base/cmake_install.cmake")
+  include("/home/aniketh/rv_ws/robotVitals/robotVitals/build/laser_noise/cmake_install.cmake")
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 endif()
 

@@ -3576,15 +3576,15 @@
       <pose frame=''>4.95926 4.40906 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>10288 0</sim_time>
-      <real_time>146 171454505</real_time>
-      <wall_time>1623697959 40018707</wall_time>
-      <iterations>124364</iterations>
+      <sim_time>10321 636000000</sim_time>
+      <real_time>91 683524239</real_time>
+      <wall_time>1623785399 735746989</wall_time>
+      <iterations>91513</iterations>
       <model name='asphalt_plane'>
-        <pose frame=''>-0.525917 1.48505 0 0 -0 0</pose>
-        <scale>1.01944 27.5696 1</scale>
+        <pose frame=''>-0.351945 1.36077 0 0 -0 0</pose>
+        <scale>1.04303 254.935 1</scale>
         <link name='link'>
-          <pose frame=''>-0.525917 1.48505 0 0 -0 0</pose>
+          <pose frame=''>-0.351945 1.36077 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -4806,7 +4806,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-3.32899 6.30652 52.5019 -0 1.5058 -1.58409</pose>
+        <pose frame=''>0.390664 7.94809 57.906 -0 1.5058 -1.58409</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -47676,7 +47676,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>18.1644 7e-06 0.1</size>
+              <size>20 3.81524 0.1</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -47697,7 +47697,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>18.1644 7e-06 0.1</size>
+              <size>20 3.81524 0.1</size>
             </box>
           </geometry>
           <material>

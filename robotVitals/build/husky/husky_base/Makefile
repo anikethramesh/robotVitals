@@ -80,6 +80,7 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+<<<<<<< HEAD
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -101,6 +102,8 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+=======
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -112,6 +115,7 @@ test/fast: test
 
 .PHONY : test/fast
 
+<<<<<<< HEAD
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -122,6 +126,28 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+=======
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Special rule for the target install
 install: preinstall
@@ -135,6 +161,20 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+<<<<<<< HEAD
+=======
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 # The main all target
 all: cmake_check_build_system
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles /home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_base/CMakeFiles/progress.marks
@@ -168,6 +208,7 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
@@ -261,6 +302,11 @@ diagnostic_msgs_generate_messages_eus/fast:
 husky/husky_base/CMakeFiles/roslint.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/roslint.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/roslint.dir/rule
+=======
+husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 roslint: husky/husky_base/CMakeFiles/roslint.dir/rule
@@ -273,9 +319,30 @@ roslint/fast:
 .PHONY : roslint/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+=======
+husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_lisp: husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 diagnostic_msgs_generate_messages_nodejs: husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
@@ -303,6 +370,7 @@ diagnostic_msgs_generate_messages_lisp/fast:
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
@@ -316,6 +384,21 @@ sensor_msgs_generate_messages_lisp: husky/husky_base/CMakeFiles/sensor_msgs_gene
 sensor_msgs_generate_messages_lisp/fast:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
+=======
+husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_nodejs: husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_nodejs/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 husky/husky_base/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
@@ -333,6 +416,7 @@ sensor_msgs_generate_messages_nodejs/fast:
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/run_tests_husky_base.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/run_tests_husky_base.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/run_tests_husky_base.dir/rule
@@ -361,6 +445,51 @@ controller_manager_msgs_generate_messages_nodejs: husky/husky_base/CMakeFiles/co
 controller_manager_msgs_generate_messages_nodejs/fast:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
 .PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+=======
+husky/husky_base/CMakeFiles/roslint_husky_base.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/roslint_husky_base.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/roslint_husky_base.dir/rule
+
+# Convenience name for target.
+roslint_husky_base: husky/husky_base/CMakeFiles/roslint_husky_base.dir/rule
+
+.PHONY : roslint_husky_base
+
+# fast build rule for target.
+roslint_husky_base/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/roslint_husky_base.dir/build.make husky/husky_base/CMakeFiles/roslint_husky_base.dir/build
+.PHONY : roslint_husky_base/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+diagnostic_msgs_generate_messages_lisp: husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : diagnostic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make husky/husky_base/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check.dir/rule
+
+# Convenience name for target.
+_run_tests_husky_base_roslaunch-check: husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check.dir/rule
+
+.PHONY : _run_tests_husky_base_roslaunch-check
+
+# fast build rule for target.
+_run_tests_husky_base_roslaunch-check/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check.dir/build.make husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check.dir/build
+.PHONY : _run_tests_husky_base_roslaunch-check/fast
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
@@ -378,9 +507,30 @@ controller_manager_msgs_generate_messages_cpp/fast:
 .PHONY : controller_manager_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+=======
+husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/rule
+
+# Convenience name for target.
+clean_test_results_husky_base: husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/rule
+
+.PHONY : clean_test_results_husky_base
+
+# fast build rule for target.
+clean_test_results_husky_base/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/build.make husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/build
+.PHONY : clean_test_results_husky_base/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 geometry_msgs_generate_messages_py: husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -393,9 +543,30 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+=======
+husky/husky_base/CMakeFiles/_run_tests_husky_base.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/_run_tests_husky_base.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/_run_tests_husky_base.dir/rule
+
+# Convenience name for target.
+_run_tests_husky_base: husky/husky_base/CMakeFiles/_run_tests_husky_base.dir/rule
+
+.PHONY : _run_tests_husky_base
+
+# fast build rule for target.
+_run_tests_husky_base/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/_run_tests_husky_base.dir/build.make husky/husky_base/CMakeFiles/_run_tests_husky_base.dir/build
+.PHONY : _run_tests_husky_base/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/roslint.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/roslint.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/roslint.dir/rule
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 controller_manager_msgs_generate_messages_lisp: husky/husky_base/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
@@ -423,6 +594,7 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -441,6 +613,11 @@ geometry_msgs_generate_messages_cpp/fast:
 husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+=======
+husky/husky_base/CMakeFiles/husky_node.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/husky_node.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/husky_node.dir/rule
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 geometry_msgs_generate_messages_lisp: husky/husky_base/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
@@ -453,6 +630,7 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+<<<<<<< HEAD
 husky/husky_base/CMakeFiles/roslint_husky_base.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/roslint_husky_base.dir/rule
 .PHONY : husky/husky_base/CMakeFiles/roslint_husky_base.dir/rule
@@ -631,6 +809,81 @@ clean_test_results_husky_base: husky/husky_base/CMakeFiles/clean_test_results_hu
 clean_test_results_husky_base/fast:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/build.make husky/husky_base/CMakeFiles/clean_test_results_husky_base.dir/build
 .PHONY : clean_test_results_husky_base/fast
+=======
+husky/husky_base/CMakeFiles/horizon_legacy.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/horizon_legacy.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/horizon_legacy.dir/rule
+
+# Convenience name for target.
+horizon_legacy: husky/husky_base/CMakeFiles/horizon_legacy.dir/rule
+
+.PHONY : horizon_legacy
+
+# fast build rule for target.
+horizon_legacy/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/horizon_legacy.dir/build.make husky/husky_base/CMakeFiles/horizon_legacy.dir/build
+.PHONY : horizon_legacy/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/run_tests_husky_base.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/run_tests_husky_base.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/run_tests_husky_base.dir/rule
+
+# Convenience name for target.
+run_tests_husky_base: husky/husky_base/CMakeFiles/run_tests_husky_base.dir/rule
+
+.PHONY : run_tests_husky_base
+
+# fast build rule for target.
+run_tests_husky_base/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/run_tests_husky_base.dir/build.make husky/husky_base/CMakeFiles/run_tests_husky_base.dir/build
+.PHONY : run_tests_husky_base/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check.dir/rule
+
+# Convenience name for target.
+run_tests_husky_base_roslaunch-check: husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check.dir/rule
+
+.PHONY : run_tests_husky_base_roslaunch-check
+
+# fast build rule for target.
+run_tests_husky_base_roslaunch-check/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check.dir/build.make husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check.dir/build
+.PHONY : run_tests_husky_base_roslaunch-check/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check_launch.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check_launch.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check_launch.dir/rule
+
+# Convenience name for target.
+run_tests_husky_base_roslaunch-check_launch: husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check_launch.dir/rule
+
+.PHONY : run_tests_husky_base_roslaunch-check_launch
+
+# fast build rule for target.
+run_tests_husky_base_roslaunch-check_launch/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check_launch.dir/build.make husky/husky_base/CMakeFiles/run_tests_husky_base_roslaunch-check_launch.dir/build
+.PHONY : run_tests_husky_base_roslaunch-check_launch/fast
+
+# Convenience name for target.
+husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check_launch.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check_launch.dir/rule
+.PHONY : husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check_launch.dir/rule
+
+# Convenience name for target.
+_run_tests_husky_base_roslaunch-check_launch: husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check_launch.dir/rule
+
+.PHONY : _run_tests_husky_base_roslaunch-check_launch
+
+# fast build rule for target.
+_run_tests_husky_base_roslaunch-check_launch/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check_launch.dir/build.make husky/husky_base/CMakeFiles/_run_tests_husky_base_roslaunch-check_launch.dir/build
+.PHONY : _run_tests_husky_base_roslaunch-check_launch/fast
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 src/horizon_legacy/Logger.o: src/horizon_legacy/Logger.cpp.o
 
@@ -989,6 +1242,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+<<<<<<< HEAD
 	@echo "... install/strip"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
@@ -1027,6 +1281,36 @@ help:
 	@echo "... _run_tests_husky_base_roslaunch-check_launch"
 	@echo "... clean_test_results_husky_base"
 	@echo "... install"
+=======
+	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... test"
+	@echo "... diagnostic_msgs_generate_messages_py"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... diagnostic_msgs_generate_messages_eus"
+	@echo "... diagnostic_msgs_generate_messages_cpp"
+	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... diagnostic_msgs_generate_messages_nodejs"
+	@echo "... roslint_husky_base"
+	@echo "... list_install_components"
+	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... _run_tests_husky_base_roslaunch-check"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... controller_manager_msgs_generate_messages_cpp"
+	@echo "... clean_test_results_husky_base"
+	@echo "... controller_manager_msgs_generate_messages_py"
+	@echo "... _run_tests_husky_base"
+	@echo "... roslint"
+	@echo "... controller_manager_msgs_generate_messages_eus"
+	@echo "... husky_node"
+	@echo "... horizon_legacy"
+	@echo "... rebuild_cache"
+	@echo "... run_tests_husky_base"
+	@echo "... run_tests_husky_base_roslaunch-check"
+	@echo "... run_tests_husky_base_roslaunch-check_launch"
+	@echo "... _run_tests_husky_base_roslaunch-check_launch"
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 	@echo "... src/horizon_legacy/Logger.o"
 	@echo "... src/horizon_legacy/Logger.i"
 	@echo "... src/horizon_legacy/Logger.s"

@@ -1,6 +1,7 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 Run Build Command:"/usr/bin/make" "cmTC_3ebb8/fast"
 /usr/bin/make -f CMakeFiles/cmTC_3ebb8.dir/build.make CMakeFiles/cmTC_3ebb8.dir/build
 make[1]: Entering directory '/home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
@@ -17,6 +18,24 @@ make[1]: *** [cmTC_3ebb8] Error 1
 make[1]: Leaving directory '/home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
 Makefile:126: recipe for target 'cmTC_3ebb8/fast' failed
 make: *** [cmTC_3ebb8/fast] Error 2
+=======
+Run Build Command:"/usr/bin/make" "cmTC_864eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_864eb.dir/build.make CMakeFiles/cmTC_864eb.dir/build
+make[1]: Entering directory '/home/aniketh/rv_ws/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_864eb.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_864eb.dir/CheckSymbolExists.c.o   -c /home/aniketh/rv_ws/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_864eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_864eb.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_864eb.dir/CheckSymbolExists.c.o  -o cmTC_864eb -rdynamic 
+CMakeFiles/cmTC_864eb.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_864eb.dir/build.make:97: recipe for target 'cmTC_864eb' failed
+make[1]: *** [cmTC_864eb] Error 1
+make[1]: Leaving directory '/home/aniketh/rv_ws/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_864eb/fast' failed
+make: *** [cmTC_864eb/fast] Error 2
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 File /home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -36,6 +55,7 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 Run Build Command:"/usr/bin/make" "cmTC_8f058/fast"
 /usr/bin/make -f CMakeFiles/cmTC_8f058.dir/build.make CMakeFiles/cmTC_8f058.dir/build
 make[1]: Entering directory '/home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
@@ -51,5 +71,22 @@ make[1]: *** [cmTC_8f058] Error 1
 make[1]: Leaving directory '/home/aniketh/programming/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
 Makefile:126: recipe for target 'cmTC_8f058/fast' failed
 make: *** [cmTC_8f058/fast] Error 2
+=======
+Run Build Command:"/usr/bin/make" "cmTC_50c21/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50c21.dir/build.make CMakeFiles/cmTC_50c21.dir/build
+make[1]: Entering directory '/home/aniketh/rv_ws/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50c21.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_50c21.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_50c21
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50c21.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_50c21.dir/CheckFunctionExists.c.o  -o cmTC_50c21 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_50c21.dir/build.make:97: recipe for target 'cmTC_50c21' failed
+make[1]: *** [cmTC_50c21] Error 1
+make[1]: Leaving directory '/home/aniketh/rv_ws/robotVitals/robotVitals/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_50c21/fast' failed
+make: *** [cmTC_50c21/fast] Error 2
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 

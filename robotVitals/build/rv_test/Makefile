@@ -168,9 +168,45 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+<<<<<<< HEAD
 rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+=======
+rv_test/CMakeFiles/snr_estimator.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/snr_estimator.dir/rule
+.PHONY : rv_test/CMakeFiles/snr_estimator.dir/rule
+
+# Convenience name for target.
+snr_estimator: rv_test/CMakeFiles/snr_estimator.dir/rule
+
+.PHONY : snr_estimator
+
+# fast build rule for target.
+snr_estimator/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/build
+.PHONY : snr_estimator/fast
+
+# Convenience name for target.
+rv_test/CMakeFiles/laserScanVisualiser.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/laserScanVisualiser.dir/rule
+.PHONY : rv_test/CMakeFiles/laserScanVisualiser.dir/rule
+
+# Convenience name for target.
+laserScanVisualiser: rv_test/CMakeFiles/laserScanVisualiser.dir/rule
+
+.PHONY : laserScanVisualiser
+
+# fast build rule for target.
+laserScanVisualiser/fast:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/laserScanVisualiser.dir/build.make rv_test/CMakeFiles/laserScanVisualiser.dir/build
+.PHONY : laserScanVisualiser/fast
+
+# Convenience name for target.
+rv_test/CMakeFiles/sampler.dir/rule:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/sampler.dir/rule
+.PHONY : rv_test/CMakeFiles/sampler.dir/rule
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 # Convenience name for target.
 roscpp_generate_messages_nodejs: rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
@@ -401,6 +437,33 @@ src/sampler.cpp.s:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/sampler.dir/build.make rv_test/CMakeFiles/sampler.dir/src/sampler.cpp.s
 .PHONY : src/sampler.cpp.s
 
+src/snr_estimator.o: src/snr_estimator.cpp.o
+
+.PHONY : src/snr_estimator.o
+
+# target to build an object file
+src/snr_estimator.cpp.o:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/src/snr_estimator.cpp.o
+.PHONY : src/snr_estimator.cpp.o
+
+src/snr_estimator.i: src/snr_estimator.cpp.i
+
+.PHONY : src/snr_estimator.i
+
+# target to preprocess a source file
+src/snr_estimator.cpp.i:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/src/snr_estimator.cpp.i
+.PHONY : src/snr_estimator.cpp.i
+
+src/snr_estimator.s: src/snr_estimator.cpp.s
+
+.PHONY : src/snr_estimator.s
+
+# target to generate assembly for a file
+src/snr_estimator.cpp.s:
+	cd /home/aniketh/rv_ws/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/snr_estimator.dir/build.make rv_test/CMakeFiles/snr_estimator.dir/src/snr_estimator.cpp.s
+.PHONY : src/snr_estimator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -408,7 +471,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+<<<<<<< HEAD
 	@echo "... install/local"
+=======
+	@echo "... snr_estimator"
+	@echo "... laserScanVisualiser"
+	@echo "... sampler"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... test"
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... laserScanVisualiser"
@@ -432,6 +503,9 @@ help:
 	@echo "... src/sampler.o"
 	@echo "... src/sampler.i"
 	@echo "... src/sampler.s"
+	@echo "... src/snr_estimator.o"
+	@echo "... src/snr_estimator.i"
+	@echo "... src/snr_estimator.s"
 .PHONY : help
 
 

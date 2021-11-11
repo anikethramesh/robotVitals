@@ -3576,13 +3576,13 @@
       <pose frame=''>4.95926 4.40906 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>10079 734000000</sim_time>
-      <real_time>173 51939596</real_time>
-      <wall_time>1623697445 946621288</wall_time>
-      <iterations>168021</iterations>
+      <sim_time>10149 628000000</sim_time>
+      <real_time>74 952402628</real_time>
+      <wall_time>1623785025 779623602</wall_time>
+      <iterations>69894</iterations>
       <model name='asphalt_plane'>
         <pose frame=''>-0.351945 1.36077 0 0 -0 0</pose>
-        <scale>1 1.51448 1</scale>
+        <scale>1 3.46134 1</scale>
         <link name='link'>
           <pose frame=''>-0.351945 1.36077 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
@@ -47676,7 +47676,7 @@
         <collision name='collision'>
           <geometry>
             <box>
-              <size>20 13.2059 0.1</size>
+              <size>20 3.81526 0.1</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -47697,7 +47697,7 @@
           <cast_shadows>0</cast_shadows>
           <geometry>
             <box>
-              <size>20 13.2059 0.1</size>
+              <size>20 3.81526 0.1</size>
             </box>
           </geometry>
           <material>

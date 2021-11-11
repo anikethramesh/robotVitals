@@ -323,12 +323,15 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+<<<<<<< HEAD
 //The directory containing a CMake configuration file for actionlib.
 actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
 
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
 
+=======
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
@@ -347,18 +350,24 @@ controller_manager_msgs_DIR:PATH=/opt/ros/melodic/share/controller_manager_msgs/
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
+<<<<<<< HEAD
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/melodic/share/cv_bridge/cmake
 
+=======
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 //The directory containing a CMake configuration file for diagnostic_msgs.
 diagnostic_msgs_DIR:PATH=/opt/ros/melodic/share/diagnostic_msgs/cmake
 
 //The directory containing a CMake configuration file for diagnostic_updater.
 diagnostic_updater_DIR:PATH=/opt/ros/melodic/share/diagnostic_updater/cmake
 
+<<<<<<< HEAD
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
 
+=======
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
 
@@ -504,9 +513,12 @@ husky_viz_BINARY_DIR:STATIC=/home/aniketh/programming/robotVitals/robotVitals/bu
 //Value Computed by CMake
 husky_viz_SOURCE_DIR:STATIC=/home/aniketh/programming/robotVitals/robotVitals/src/husky/husky_viz
 
+<<<<<<< HEAD
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
 
+=======
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 //Value Computed by CMake
 laser_noise_BINARY_DIR:STATIC=/home/aniketh/programming/robotVitals/robotVitals/build/laser_noise
 
@@ -514,7 +526,11 @@ laser_noise_BINARY_DIR:STATIC=/home/aniketh/programming/robotVitals/robotVitals/
 laser_noise_SOURCE_DIR:STATIC=/home/aniketh/programming/robotVitals/robotVitals/src/laser_noise
 
 //Path to a library.
+<<<<<<< HEAD
 lib:FILEPATH=/opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+=======
+lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -525,6 +541,7 @@ message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
+<<<<<<< HEAD
 //The directory containing a CMake configuration file for move_base.
 move_base_DIR:PATH=/opt/ros/melodic/share/move_base/cmake
 
@@ -534,6 +551,8 @@ move_base_msgs_DIR:PATH=/opt/ros/melodic/share/move_base_msgs/cmake
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
 
+=======
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
 
@@ -588,6 +607,7 @@ rv_test_SOURCE_DIR:STATIC=/home/aniketh/programming/robotVitals/robotVitals/src/
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
 
+<<<<<<< HEAD
 //Value Computed by CMake
 status_publisher_BINARY_DIR:STATIC=/home/aniketh/programming/robotVitals/robotVitals/build/status_publisher
 
@@ -611,6 +631,16 @@ tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
 
 //The directory containing a CMake configuration file for tf.
 tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
+=======
+//The directory containing a CMake configuration file for std_msgs.
+std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
+
+//Value Computed by CMake
+support_scripts_BINARY_DIR:STATIC=/home/aniketh/rv_ws/robotVitals/robotVitals/build/support_scripts
+
+//Value Computed by CMake
+support_scripts_SOURCE_DIR:STATIC=/home/aniketh/rv_ws/robotVitals/robotVitals/src/support_scripts
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -784,8 +814,11 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CURSES_CURSES_LIBRARY
 CURSES_CURSES_LIBRARY-ADVANCED:INTERNAL=1
+<<<<<<< HEAD
 //ADVANCED property for variable: CURSES_FORM_LIBRARY
 CURSES_FORM_LIBRARY-ADVANCED:INTERNAL=1
+=======
+>>>>>>> b7c7b0bbf976791929962dda2e3f0ec41580ac0b
 //ADVANCED property for variable: CURSES_INCLUDE_PATH
 CURSES_INCLUDE_PATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CURSES_NCURSES_LIBRARY

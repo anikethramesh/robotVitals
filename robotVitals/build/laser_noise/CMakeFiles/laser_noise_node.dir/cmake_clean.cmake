@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/laser_noise_node.dir/src/laser_noise_node.cpp.o"
+  "CMakeFiles/laser_noise_node.dir/src/laser_noise_spacebartrigger.cpp.o"
   "/home/aniketh/programming/robotVitals/robotVitals/devel/lib/laser_noise/laser_noise_node.pdb"
   "/home/aniketh/programming/robotVitals/robotVitals/devel/lib/laser_noise/laser_noise_node"
 )

@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("create_vitals")
 subdirs("husky/husky_desktop")
 subdirs("husky/husky_robot")
 subdirs("husky/husky_simulator")

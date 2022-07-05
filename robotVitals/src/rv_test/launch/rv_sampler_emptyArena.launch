@@ -13,7 +13,7 @@
 	<arg name="z" default="0.00"/>
 	<arg name="yaw" default="0.00"/>
 <!-- 	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/test.world"/> -->
-	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/unit_empty.world"/>
+	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/unit_hard.world"/>
 
  <!-- 	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/test_motionErrors.world"/> -->
 <!-- 	<arg name="world_name" default="/home/aniketh/programming/GazeboWorlds/test_SNR.world"/> -->
@@ -78,6 +78,8 @@
 <node name='laserScanVisualiser' pkg='rv_test' type='laserScanVisualiser'/>
 <!-- <node name='activate_noise_joystick' pkg='laser_noise' type='activate_noise_joystick'/>
  --><node name='snr_estimator' pkg='rv_test' type='snr_estimator.py'/>
+
+<!-- <node name='magDist_odom_maker' pkg ='create_vitals' type = 'magDist_odom.py'/> -->
 
 <!-- 		<node pkg="rosbag" type="record" args="-O ~/programming/bagfiles/trial1_empty_nopdf.bag husky_velocity_controller/odom imu/data move_base/current_goal odometry/filtered  psnr_laserScan" name="record" output="screen"/> -->
 

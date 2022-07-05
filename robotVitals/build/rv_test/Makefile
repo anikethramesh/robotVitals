@@ -68,28 +68,6 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -102,16 +80,27 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : edit_cache/fast
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target test
 test:
@@ -123,6 +112,17 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -168,51 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: rv_test/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : rv_test/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: rv_test/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_eus.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
 rv_test/CMakeFiles/laserScanVisualiser.dir/rule:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/laserScanVisualiser.dir/rule
 .PHONY : rv_test/CMakeFiles/laserScanVisualiser.dir/rule
@@ -226,111 +181,6 @@ laserScanVisualiser: rv_test/CMakeFiles/laserScanVisualiser.dir/rule
 laserScanVisualiser/fast:
 	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/laserScanVisualiser.dir/build.make rv_test/CMakeFiles/laserScanVisualiser.dir/build
 .PHONY : laserScanVisualiser/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rv_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: rv_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make rv_test/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : rv_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: rv_test/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : rv_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: rv_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make rv_test/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rv_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: rv_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make rv_test/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make rv_test/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rv_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: rv_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make rv_test/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-rv_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f CMakeFiles/Makefile2 rv_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : rv_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: rv_test/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/aniketh/programming/robotVitals/robotVitals/build && $(MAKE) -f rv_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make rv_test/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 rv_test/CMakeFiles/sampler.dir/rule:
@@ -450,24 +300,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... list_install_components"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_eus"
-	@echo "... laserScanVisualiser"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_cpp"
 	@echo "... install"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... edit_cache"
+	@echo "... list_install_components"
+	@echo "... laserScanVisualiser"
 	@echo "... sampler"
 	@echo "... snr_estimator"
+	@echo "... install/local"
 	@echo "... test"
+	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... src/laserScanVisualiser.o"
 	@echo "... src/laserScanVisualiser.i"

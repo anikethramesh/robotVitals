@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/aniketh/programming/robotVitals/robotVitals/build/gtest/cmake_install.cmake")
+  include("/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/cmake_install.cmake")
   include("/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_desktop/cmake_install.cmake")
   include("/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_robot/cmake_install.cmake")
   include("/home/aniketh/programming/robotVitals/robotVitals/build/husky/husky_simulator/cmake_install.cmake")

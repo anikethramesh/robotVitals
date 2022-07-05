@@ -1,0 +1,8 @@
+prefix=/home/aniketh/programming/robotVitals/robotVitals/devel
+
+Name: create_vitals
+Description: Description of create_vitals
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

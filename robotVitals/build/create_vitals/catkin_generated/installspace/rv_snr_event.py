@@ -1,6 +1,7 @@
+#!/usr/bin/env python2
+
 import rospy
 from std_msgs.msg import Float64
-import numpy as np
 import math
 
 
@@ -20,7 +21,9 @@ class rv_snr:
 		return p_f
 
 	def callback(self,msg):
-		self.pub.publish(self.psnrError_cdf(msg.data))
+		output_message = Float64()
+		output_message.data = self.psnrError_cdf(msg.data) 
+		self.pub.publish(output_message)
 
 rospy.init_node('snr_vital')
 rv = rv_snr()

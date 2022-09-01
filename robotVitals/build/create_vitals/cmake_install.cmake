@@ -53,10 +53,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/rv_snr_event.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/magDist_odom.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/magDist_odom.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/magDist_odom_differentiator.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/odomPosErr_differentiator.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/linAcc_differentiator.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/magROC_event_detection.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/velocity_from_odomMag_differentiator.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/velocity_from_odom_event_detection.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/odomPosErr_event_detection.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/probabilityOfSuffering.py")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/create_vitals" TYPE PROGRAM FILES "/home/aniketh/programming/robotVitals/robotVitals/build/create_vitals/catkin_generated/installspace/healthAndSuffering.py")
 endif()
 

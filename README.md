@@ -29,3 +29,6 @@ In the folder named `DataAnalysis` there are two jupyter notebooks that were use
  2. Point the jupyter lab notebook to the directory with all the rosbags
  3. Alternatively, if the rosbags are saved as pickle files, they can be used directly.
 
+## Using Robot Vitals in real time:
+
+The launch file `rv_realtime_husky.launch` demonstrates a setup to monitor the robot health and robot vitals in real time. After running that launch file, give the robot a waypoint. The robot health can then easily be visualised. Open a new terminal window and run 'rosrun rqt_plot rqt_plot'. In the 'rqt_plot' window choose the topic `/robotHealth` to visualise the robot health trend

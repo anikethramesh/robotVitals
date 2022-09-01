@@ -31,4 +31,4 @@ In the folder named `DataAnalysis` there are two jupyter notebooks that were use
 
 ## Using Robot Vitals in real time:
 
-The launch file `rv_realtime_husky.launch` demonstrates a setup to monitor the robot health and robot vitals in real time. After running that launch file, give the robot a waypoint. The robot health can then easily be visualised. Open a new terminal window and run 'rosrun rqt_plot rqt_plot'. In the 'rqt_plot' window choose the topic `/robotHealth` to visualise the robot health trend
+The launch file `rv_realtime_husky.launch` demonstrates a setup to monitor the robot health and robot vitals in real time. After running that launch file, give the robot a waypoint. The robot health can then easily be visualised. Open a new terminal window and run `rosrun rqt_plot rqt_plot`. In the `rqt_plot` window choose the topic `/robotHealth` to visualise the robot health trend
